@@ -2109,7 +2109,7 @@ ul.main-list li:target {
 .main-article1 {
   height: 420px;
   width: 100%;
-  background: url("https://i.postimg.cc/Z5GxfQZV/marvel616-lob-mas-dsk-02-0.jpg"),
+  background: url("https://i.postimg.cc/YCqdCzQ8/mmsm-1110-com-mas-dsk-01.jpg"),
     linear-gradient(to left, transparent, black 120%);
   background-blend-mode: multiply;
   /* activo multiples backgrounds */
@@ -2125,7 +2125,7 @@ ul.main-list li:target {
   height: 420px;
   width: 100%;
 
-  background: url("https://i.postimg.cc/PrqyNZ2z/muplus-0924-com-mas-dsk-01.jpg"),
+  background: url("https://i.postimg.cc/63R0mjN6/wandavision-lob-mas-dsk-01.jpg"),
     linear-gradient(to left, transparent, black 120%);
   background-blend-mode: multiply;
   /* activo multiples backgrounds */
@@ -2140,7 +2140,7 @@ ul.main-list li:target {
 .main-article3 {
   height: 420px;
   width: 100%;
-  background: url("https://i.postimg.cc/7P9XxXMZ/blackwidowfeaturette-mas-dsk.jpg"),
+  background: url("https://i.postimg.cc/MGg5tkNr/monicarambeau-1111-com-mas-dsk-01.jpg"),
     linear-gradient(to left, transparent, black 120%);
   background-blend-mode: multiply;
   /* activo multiples backgrounds */
@@ -2156,7 +2156,7 @@ ul.main-list li:target {
   height: 420px;
   width: 100%;
 
-  background: url("https://i.postimg.cc/C5c4mLLq/blackwidow-0925-com-mas-dsk-01.jpg"),
+  background: url("https://i.postimg.cc/43Ywz4L9/capws-1111-com-mas-dsk-01.jpg"),
     linear-gradient(to left, transparent, black 120%);
   background-blend-mode: multiply;
   /* activo multiples backgrounds */
@@ -2171,7 +2171,7 @@ ul.main-list li:target {
 .main-article5 {
   height: 420px;
   width: 100%;
-  background: url("https://i.postimg.cc/15YHFtdx/hulkhands-com-mas-dsk-01.jpg"),
+  background: url("https://i.postimg.cc/90hp5dWd/xmen-1111-com-mas-dsk-01.jpg"),
     linear-gradient(to left, transparent, black 120%);
   background-blend-mode: multiply;
   /* activo multiples backgrounds */
@@ -4269,9 +4269,10 @@ a {
   }
 
   .Header-bottom {
-    height: 40px;
+    height: 39px;
     position: relative;
   }
+
   .Header-bottom-container {
     width: 100%;
     height: 100%;
