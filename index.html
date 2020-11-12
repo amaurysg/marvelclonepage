@@ -1,0 +1,3664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preload" href="./styles/styles.css" as="style" />
+  <!-- Preload me permite cargar contenido o elementos que necesitaré inmediatamente -->
+  <link rel="stylesheet" href="./styles/styles.css" />
+
+  <link rel="shortcut icon" href="./images/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+  <title>Clone Marvel.com |</title>
+</head>
+
+
+<body>
+  <!-- HEADER -->
+  <header id="headers">
+    <div class="header-mobile" id="header-mobile">
+      <div class="header-container">
+        <div class="icon-menu" id="burger-menu"></div>
+        <div class="logo-menu-in">
+          <div class="logo-menu1">
+            <img class="logo-menu1-img" src="./images/MarvelLogo.svg" id="logo1mobile" width="130" height="52" alt=""
+              class="marvel-logo" />
+          </div>
+
+        </div>
+        <div class="icon-search" id="icon-search"></div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div id="headerd" class="header-desktop">
+        <div class="header-desktop-container">
+          <div class="nav1-wrapper">
+            <div class="nav1">
+              <div class="Header-top-container">
+                <div class="nav1-sign">
+
+                  <div class="nav1-icon1">
+
+                  </div>
+                  <nav class="nav1-sign-in">
+                    <ul class="nav1-ul">
+
+
+                      <!--  MODAL SING IN -->
+                      <div id="modal-sign" class="modal-sign">
+                        <div class="modal-sign-container">
+                          <div class="modal-sign-box">
+                            <button id="boton-sign-close" class="boton-sign-close"></button>
+                            <div class="modal-sign-header">
+                              <div class="modal-sign-image-container">
+                                <img src="./images/join/marvel-insider-modal.png" Marvel Insider" class="Modal-image">
+                              </div>
+                            </div>
+                            <div class="modal-sign-content-form">
+                              <form class="modal-sign-form">
+                                <div class="modal-sign-form-group">
+                                  <input class="modal-sign-input" type="email" name="email" id="email"
+                                    placeholder="Email Address">
+                                </div>
+                                <div class="modal-sign-form-group">
+                                  <input class="modal-sign-input" type="password" name="password" id="password"
+                                    placeholder="Password">
+                                </div>
+                                <div class="button-sign-group">
+                                  <button type="submit" class="Modal-button Modal-button-red">
+                                    Sign In
+                                  </button>
+                                </div>
+                                <div class="modal-sign-help">
+                                  <a href="#">Need help signing in?</a>
+                                </div>
+                                <div class="modal-sign-register">
+                                  <a href="#" id="open-modal-create" class="modal-button-create Modal-Join-open">Create
+                                    an
+                                    Account</a>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  MODAL CREATE YOUR ACCOUNT -->
+                      <div id="modal-create" class="Modal">
+                        <div class="modal-create-container">
+                          <div class="modal-create-box ">
+                            <button id="modalCreate-close" class="boton-create-close"></button>
+                            <div class="modal-sign-header">
+                              <div class="modal-sign-image-container">
+                                <img src="./images/join/marvel-insider-modal.png" alt="Marvel Insider"
+                                  class="Modal-image">
+                              </div>
+                            </div>
+                            <div class="modal-sign-content-form">
+                              <h2 class="modal-create-title">Create your account</h2>
+                              <form class="modal-sign-form-group">
+                                <div class="modal-sign-form-group">
+                                  <input class="modal-sign-input" type="text" name="first_name" id="first_name"
+                                    placeholder="First Name">
+                                </div>
+                                <div class="modal-sign-form-group">
+                                  <input class="modal-sign-input" type="text" name="last_name" id="last_name"
+                                    placeholder="Last Name">
+                                </div>
+                                <div class="modal-sign-form-group">
+                                  <input class="modal-sign-input" type="email" name="email" id="register[email]"
+                                    placeholder="Email Address">
+                                </div>
+                                <div class="modal-sign-form-group">
+                                  <input class="modal-sign-input" type="password" name="password"
+                                    id="register[password]" placeholder="Password">
+                                </div>
+                                <div class="checkbox-group show-password">
+                                  <label for="show_password">
+                                    <input type="checkbox" name="show_password" id="show_password">
+                                    <span>Show password</span>
+                                  </label>
+                                </div>
+
+                                <div class="select-group">
+                                  <span>Birth Date</span>
+                                  <select name="birthMonth" id="birthMonth" class="birth-month">
+                                    <option value="">Month</option>
+                                    <option value="0" label="Jan">Jan</option>
+                                    <option value="1" label="Feb">Feb</option>
+                                    <option value="2" label="Mar">Mar</option>
+                                    <option value="3" label="Apr">Apr</option>
+                                    <option value="4" label="May">May</option>
+                                    <option value="5" label="Jun">Jun</option>
+                                    <option value="6" label="Jul">Jul</option>
+                                    <option value="7" label="Aug">Aug</option>
+                                    <option value="8" label="Sep">Sep</option>
+                                    <option value="9" label="Oct">Oct</option>
+                                    <option value="10" label="Nov">Nov</option>
+                                    <option value="11" label="Dic">Dic</option>
+                                  </select>
+                                  <select name="birthDay" id="birthDay" class="birth-day">
+                                    <option value="">Day</option>
+                                    <option value="1" label="1">1</option>
+                                    <option value="2" label="2">2</option>
+                                    <option value="3" label="3">3</option>
+                                    <option value="4" label="4">4</option>
+                                    <option value="5" label="5">5</option>
+                                    <option value="6" label="6">6</option>
+                                    <option value="7" label="7">7</option>
+                                    <option value="8" label="8">8</option>
+                                    <option value="9" label="9">9</option>
+                                    <option value="10" label="10">10</option>
+                                    <option value="11" label="11">11</option>
+                                    <option value="12" label="12">12</option>
+                                    <option value="13" label="13">13</option>
+                                    <option value="14" label="14">14</option>
+                                    <option value="15" label="15">15</option>
+                                    <option value="16" label="16">16</option>
+                                    <option value="17" label="17">17</option>
+                                    <option value="18" label="18">18</option>
+                                    <option value="19" label="19">19</option>
+                                    <option value="20" label="20">20</option>
+                                    <option value="21" label="21">21</option>
+                                    <option value="22" label="22">22</option>
+                                    <option value="23" label="23">23</option>
+                                    <option value="24" label="24">24</option>
+                                    <option value="25" label="25">25</option>
+                                    <option value="26" label="26">26</option>
+                                    <option value="27" label="27">27</option>
+                                    <option value="28" label="28">28</option>
+                                    <option value="29" label="29">29</option>
+                                    <option value="30" label="30">30</option>
+                                    <option value="31" label="31">31</option>
+                                  </select>
+                                  <select name="birthYear" id="birthYear" class="birth-year">
+                                    <option value="">Year</option>
+                                    <option value="2020" label="2020">2020</option>
+                                    <option value="2019" label="2019">2019</option>
+                                    <option value="2018" label="2018">2018</option>
+                                    <option value="2017" label="2017">2017</option>
+                                    <option value="2016" label="2016">2016</option>
+                                    <option value="2015" label="2015">2015</option>
+                                    <option value="2014" label="2014">2014</option>
+                                    <option value="2013" label="2013">2013</option>
+                                    <option value="2012" label="2012">2012</option>
+                                    <option value="2011" label="2011">2011</option>
+                                    <option value="2010" label="2010">2010</option>
+                                    <option value="2009" label="2009">2009</option>
+                                    <option value="2008" label="2008">2008</option>
+                                    <option value="2007" label="2007">2007</option>
+                                    <option value="2006" label="2006">2006</option>
+                                    <option value="2005" label="2005">2005</option>
+                                    <option value="2004" label="2004">2004</option>
+                                    <option value="2003" label="2003">2003</option>
+                                    <option value="2002" label="2002">2002</option>
+                                    <option value="2001" label="2001">2001</option>
+                                    <option value="2000" label="2000">2000</option>
+                                  </select>
+                                </div>
+                                <section class="section-addresses"></section>
+
+                                <div class="checkbox-group">
+                                  <label for="subscribe">
+                                    <input type="checkbox" name="subscribe" id="subscribe" checked="">
+                                    <span>
+                                      Yes! I would like to receive updates, special offers, and
+                                      other information from Marvel and The Walt Disney Family of
+                                      Companies.
+                                    </span>
+                                  </label>
+                                </div>
+                                <div class="checkbox-group">
+                                  <label for="newsletter">
+                                    <input type="checkbox" name="newsletter" id="newsletter" checked="">
+                                    <span>
+                                      Yes, I would like to receive Marvel’s Need To Know
+                                      newsletter for news, video/podcast updates, and more.
+                                    </span>
+                                  </label>
+                                </div>
+
+                                <section class="modal-create-policy">
+                                  <div class="modal-create-policy-content">
+                                    <p class="modal-create-policy-copy">
+                                      By creating an account, I agree to the
+                                      <a href="#">Terms of Use</a> and acknowledge that I have
+                                      read the <a href="#">Privacy Policy</a>.
+                                    </p>
+                                  </div>
+                                </section>
+
+                                <section class="modal-create-region">
+                                  <p class="modal-create-region-copy">My home country/region: Mexico. <a
+                                      href="#">Change</a>.
+                                  </p>
+                                </section>
+
+                                <div class="modal-create-button-group">
+                                  <button type="submit" class="modal-create-button-submit">
+                                    Create Account
+                                  </button>
+                                </div>
+
+                                <div class="modal-footer-create">
+                                  <p class="modal-footer-create-copy">
+                                    Already have an account?
+                                    <a href="#" class="Modal-open">Sign In</a>
+                                  </p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        </li>
+                        <!-- MODAL Enhance your marvel  -->
+                        <div class="join-first" id="join-first">
+                          <div class="join-container">
+                            <h1 class="join-title">Enhance your marvel Experience</h1>
+                            <img class="join-img" src="./images/join/marvel-insider-desktop-nav.png" alt="marvel-join">
+                            <ul class="join-text-list">
+                              <li>
+                                <span>
+                                  Earn points for what you already do as a Marvel
+                                  fan and redeem for cool rewards as a
+                                  <a href="#">Marvel Insider</a>.
+                                </span>
+                                <br>
+                                <span class="small">
+                                  (Points/Rewards program available to U.S.
+                                  residents only.)
+                                </span>
+                              </li>
+                              <li>
+                                <span>
+                                  Unlock the world of Marvel Digital Comics! Your
+                                  key for reading
+                                  <a href="#">Marvel Unlimited</a> and Digital Comic
+                                  purchases across multiple devices.
+                                </span>
+                              </li>
+                              <li>
+                                <span>
+                                  Get the latest news, original content, and special
+                                  offers from Marvel.
+                                </span>
+                              </li>
+                            </ul>
+                            <button class="join-button Modal-Join-open" id="boton-join-create">
+                              Join Now
+                            </button>
+                            <div class="join-footer">
+                              <span>
+                                Already have an account?
+                                <a class="Modal-open">Sign in</a>
+                              </span>
+                            </div>
+
+                          </div>
+                        </div>
+
+                    </ul>
+
+
+                </div>
+
+                <!-- USERS -->
+                <div class="Users">
+                  <div class="Insider-logo">
+                    <span class="Icon-svg Icon-svg-white-fill Icon-insider-circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.6 66.7">
+                        <path fill-rule="evenodd"
+                          d="M59.5 15.1L53 51.4c0 .4-.3.6-.6.6h-6.5c-.3 0-.6-.2-.8-.6l-8.8-24.7H36l-4.3 24.7c-.1.3-.3.6-.6.6H25c-.3 0-.6-.2-.5-.6l6.6-37.3c.1-.3.3-.6.6-.6h6.4c.5 0 .7.2.8.6l8.8 24.7h.3l5.5-30.4C47.9 3.7 40.6.9 32.7.9 14.7.9.2 15.5.2 33.4c0 8.8 3.5 16.7 9.1 22.5l7.3-41.7c.1-.3.3-.6.6-.6H24c.3 0 .5.2.5.6l-8.3 47.2c4.8 2.8 10.4 4.5 16.4 4.5 17.9 0 32.5-14.5 32.5-32.5 0-6.8-2.1-13.1-5.6-18.3z">
+                        </path>
+                      </svg>
+                    </span>
+                  </div>
+                  <nav class="Users-nav">
+                    <ul>
+                      <li>
+                        <a class="Menu-Desktop-link Modal-open" id="open-modal-sign" href="#">
+                          Sign in
+                        </a>
+                      </li>
+                      <li><span class="Menu-Desktop-link">|</span></li>
+                      <li>
+                        <a class="Menu-Desktop-link Join-open" href="#">
+                          Join
+                        </a>
+
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <!-- LOGO -->
+                <div class="nav1-logo">
+                  <div class="nav1-logo">
+                    <img src="./images/MarvelLogo.svg" width="130" height="52" alt="">
+                  </div>
+                </div>
+                <!-- CREDIT CARD -->
+                <div class="Credit-card">
+                  <a href="#" class="Credit-card-link">
+                    <span class="Icon-svg Icon-svg-white-fill Icon-Credit-card">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.8 80.5">
+                        <path class="st0"
+                          d="M1.3 64.2c0 8.3 6.7 15 15 15h112.3c8.3 0 15-6.7 15-15V30.9H1.3v33.3zM143.6 16.2c0-8.3-6.7-15-15-15H16.3c-8.3 0-15 6.7-15 15v4.5h142.2l.1-4.5z">
+                        </path>
+                      </svg>
+                    </span>
+                    Marvel<br>Mastercard ®
+                  </a>
+                </div>
+                <!-- SEARCH  -->
+                <div class="Search-Desktop">
+                  <a class="Search" href="#">
+                    <span class="Icon-svg Icon-svg-black-fill Icon-svg-white-stroke Icon-search">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
+                        fill-rule="evenodd">
+                        <circle cx="6.5" cy="6.5" r="5.5"></circle>
+                        <path d="M14 14l3.536 3.536"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="Header-bottom">
+            <div class="Header-bottom-container">
+              <nav class="Menu-nav">
+                <ul>
+                  <li class="Menu-link">
+                    <a class="Menu-Desktop-link" href="./">Videos</a>
+                    <div class="Menu-Desktop Menu-Desktop-videos">
+                      <div class="Menu-Desktop-container">
+                        <div class="Menu-Desktop-header">
+                          <ul>
+                            <li>
+                              <a href="#">Trailers &amp; Extras</a>
+                            </li>
+                            <li>
+                              <a href="#">Digital Series</a>
+                            </li>
+                            <li>
+                              <a href="#">All Video</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="Menu-Desktop-content">
+                          <h2 class="Menu-Desktop-content-title">
+                            Trending Video
+                          </h2>
+                          <div class="Grid">
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <a class="Grid-item-overlay" href="#">
+                                    <span class="Grid-item-overlay-icon">
+                                      <i class="play-icon"></i>
+                                    </span>
+                                    <p class="Grid-item-overlay-duration">
+                                      12:16
+                                    </p>
+                                    <div class="Grid-item-overlay-insider">
+                                      <span class="Icon-svg Icon-insider-circle">
+                                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 463 463">
+                                          <defs>
+                                            <style>
+                                              .cls-1 {
+                                                opacity: 0.4;
+                                              }
+
+                                              .cls-2 {
+                                                fill: #fff;
+                                              }
+
+                                              .cls-3 {
+                                                fill: #e8b63e;
+                                              }
+
+                                              .cls-4 {
+                                                fill: #202020;
+                                              }
+                                            </style>
+                                          </defs>
+                                          <title>Artboard 1</title>
+                                          <g class="cls-1">
+                                            <circle class="cls-2" cx="231.5" cy="231.5" r="195"></circle>
+                                            <path class="cls-3"
+                                              d="M231.5 64A167.5 167.5 0 1 1 64 231.5 167.5 167.5 0 0 1 231.5 64m0-55a222.54 222.54 0 0 0-86.62 427.49 222.54 222.54 0 0 0 173.24-410A221.08 221.08 0 0 0 231.5 9z">
+                                            </path>
+                                          </g>
+                                          <circle class="cls-2" cx="231.5" cy="231.5" r="167.5"></circle>
+                                          <path class="cls-4"
+                                            d="M369.78 137l-33.27 187.65a3.18 3.18 0 0 1-3.2 2.91h-33.49a4.26 4.26 0 0 1-4.08-2.91l-45.43-127.27h-1.45l-22.43 127.27a3.13 3.13 0 0 1-2.91 2.91h-31.45a2.42 2.42 0 0 1-2.63-2.91l34.08-192.21a3.17 3.17 0 0 1 3.2-2.92h33.2c2.33 0 3.79.88 4.37 2.92l45.14 127.26h1.17l28.16-156.83A167.47 167.47 0 0 0 111 347.73l37.73-215.29a3.18 3.18 0 0 1 3.21-2.92h35.23c1.75 0 2.62 1.17 2.33 2.92L146.77 376a167.48 167.48 0 0 0 223-239z">
+                                          </path>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                  </a>
+                                  <img src="./images/videos/poster_6175956971001_c359750163dc7d9110767c26f62d6036_0.jpg"
+                                    alt="Thanos">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <div class="Grid-item-card-title">
+                                    <a href="#">Earth's Mightiest Show
+                                      <span>/ S3 E23</span></a>
+                                  </div>
+                                  <div class="Grid-item-card-headline">
+                                    <a href="#">Thanos Is Related to The Eternals?!</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <a class="Grid-item-overlay" href="#">
+                                    <span class="Grid-item-overlay-icon">
+                                      <i class="play-icon"></i>
+                                    </span>
+                                    <p class="Grid-item-overlay-duration">
+                                      12:16
+                                    </p>
+                                    <div class="Grid-item-overlay-insider">
+                                      <span class="Icon-svg Icon-insider-circle">
+                                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 463 463">
+                                          <defs>
+                                            <style>
+                                              .cls-1 {
+                                                opacity: 0.4;
+                                              }
+
+                                              .cls-2 {
+                                                fill: #fff;
+                                              }
+
+                                              .cls-3 {
+                                                fill: #e8b63e;
+                                              }
+
+                                              .cls-4 {
+                                                fill: #202020;
+                                              }
+                                            </style>
+                                          </defs>
+                                          <title>Artboard 1</title>
+                                          <g class="cls-1">
+                                            <circle class="cls-2" cx="231.5" cy="231.5" r="195"></circle>
+                                            <path class="cls-3"
+                                              d="M231.5 64A167.5 167.5 0 1 1 64 231.5 167.5 167.5 0 0 1 231.5 64m0-55a222.54 222.54 0 0 0-86.62 427.49 222.54 222.54 0 0 0 173.24-410A221.08 221.08 0 0 0 231.5 9z">
+                                            </path>
+                                          </g>
+                                          <circle class="cls-2" cx="231.5" cy="231.5" r="167.5"></circle>
+                                          <path class="cls-4"
+                                            d="M369.78 137l-33.27 187.65a3.18 3.18 0 0 1-3.2 2.91h-33.49a4.26 4.26 0 0 1-4.08-2.91l-45.43-127.27h-1.45l-22.43 127.27a3.13 3.13 0 0 1-2.91 2.91h-31.45a2.42 2.42 0 0 1-2.63-2.91l34.08-192.21a3.17 3.17 0 0 1 3.2-2.92h33.2c2.33 0 3.79.88 4.37 2.92l45.14 127.26h1.17l28.16-156.83A167.47 167.47 0 0 0 111 347.73l37.73-215.29a3.18 3.18 0 0 1 3.21-2.92h35.23c1.75 0 2.62 1.17 2.33 2.92L146.77 376a167.48 167.48 0 0 0 223-239z">
+                                          </path>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                  </a>
+                                  <img src="./images/videos/poster_6187487526001_cca40e826b05a933a37c68b8dcf18dce.jpg"
+                                    alt="Marvel Heads Up!">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <div class="Grid-item-card-title">
+                                    <a href="#">Marvel Gaming: Let's Play</a>
+                                  </div>
+                                  <div class="Grid-item-card-headline">
+                                    <a href="#">The Marvel 'Heads Up!' Challenge</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <a class="Grid-item-overlay" href="#">
+                                    <span class="Grid-item-overlay-icon">
+                                      <i class="play-icon"></i>
+                                    </span>
+                                    <p class="Grid-item-overlay-duration">
+                                      12:16
+                                    </p>
+                                    <div class="Grid-item-overlay-insider">
+                                      <span class="Icon-svg Icon-insider-circle">
+                                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 463 463">
+                                          <defs>
+                                            <style>
+                                              .cls-1 {
+                                                opacity: 0.4;
+                                              }
+
+                                              .cls-2 {
+                                                fill: #fff;
+                                              }
+
+                                              .cls-3 {
+                                                fill: #e8b63e;
+                                              }
+
+                                              .cls-4 {
+                                                fill: #202020;
+                                              }
+                                            </style>
+                                          </defs>
+                                          <title>Artboard 1</title>
+                                          <g class="cls-1">
+                                            <circle class="cls-2" cx="231.5" cy="231.5" r="195"></circle>
+                                            <path class="cls-3"
+                                              d="M231.5 64A167.5 167.5 0 1 1 64 231.5 167.5 167.5 0 0 1 231.5 64m0-55a222.54 222.54 0 0 0-86.62 427.49 222.54 222.54 0 0 0 173.24-410A221.08 221.08 0 0 0 231.5 9z">
+                                            </path>
+                                          </g>
+                                          <circle class="cls-2" cx="231.5" cy="231.5" r="167.5"></circle>
+                                          <path class="cls-4"
+                                            d="M369.78 137l-33.27 187.65a3.18 3.18 0 0 1-3.2 2.91h-33.49a4.26 4.26 0 0 1-4.08-2.91l-45.43-127.27h-1.45l-22.43 127.27a3.13 3.13 0 0 1-2.91 2.91h-31.45a2.42 2.42 0 0 1-2.63-2.91l34.08-192.21a3.17 3.17 0 0 1 3.2-2.92h33.2c2.33 0 3.79.88 4.37 2.92l45.14 127.26h1.17l28.16-156.83A167.47 167.47 0 0 0 111 347.73l37.73-215.29a3.18 3.18 0 0 1 3.21-2.92h35.23c1.75 0 2.62 1.17 2.33 2.92L146.77 376a167.48 167.48 0 0 0 223-239z">
+                                          </path>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                  </a>
+                                  <img src="./images/videos/poster_6185029322001_0e43924511f529c6ded47a2df03ccebc.jpg">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <div class="Grid-item-card-title">
+                                    <a href="#">Marvel's The Pull List</a>
+                                  </div>
+                                  <div class="Grid-item-card-headline">
+                                    <a href="#">FREE COMICS on Marvel Unlimited | Marvel's
+                                      Pull List</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <a class="Grid-item-overlay" href="#">
+                                    <span class="Grid-item-overlay-icon">
+                                      <i class="play-icon"></i>
+                                    </span>
+                                    <p class="Grid-item-overlay-duration">
+                                      12:16
+                                    </p>
+                                    <div class="Grid-item-overlay-insider">
+                                      <span class="Icon-svg Icon-insider-circle">
+                                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 463 463">
+                                          <defs>
+                                            <style>
+                                              .cls-1 {
+                                                opacity: 0.4;
+                                              }
+
+                                              .cls-2 {
+                                                fill: #fff;
+                                              }
+
+                                              .cls-3 {
+                                                fill: #e8b63e;
+                                              }
+
+                                              .cls-4 {
+                                                fill: #202020;
+                                              }
+                                            </style>
+                                          </defs>
+                                          <title>Artboard 1</title>
+                                          <g class="cls-1">
+                                            <circle class="cls-2" cx="231.5" cy="231.5" r="195"></circle>
+                                            <path class="cls-3"
+                                              d="M231.5 64A167.5 167.5 0 1 1 64 231.5 167.5 167.5 0 0 1 231.5 64m0-55a222.54 222.54 0 0 0-86.62 427.49 222.54 222.54 0 0 0 173.24-410A221.08 221.08 0 0 0 231.5 9z">
+                                            </path>
+                                          </g>
+                                          <circle class="cls-2" cx="231.5" cy="231.5" r="167.5"></circle>
+                                          <path class="cls-4"
+                                            d="M369.78 137l-33.27 187.65a3.18 3.18 0 0 1-3.2 2.91h-33.49a4.26 4.26 0 0 1-4.08-2.91l-45.43-127.27h-1.45l-22.43 127.27a3.13 3.13 0 0 1-2.91 2.91h-31.45a2.42 2.42 0 0 1-2.63-2.91l34.08-192.21a3.17 3.17 0 0 1 3.2-2.92h33.2c2.33 0 3.79.88 4.37 2.92l45.14 127.26h1.17l28.16-156.83A167.47 167.47 0 0 0 111 347.73l37.73-215.29a3.18 3.18 0 0 1 3.21-2.92h35.23c1.75 0 2.62 1.17 2.33 2.92L146.77 376a167.48 167.48 0 0 0 223-239z">
+                                          </path>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                  </a>
+                                  <img src="./images/videos/poster_6183395742001_0aa78245901d2875f1fe0fd9e20882c3.jpg"
+                                    alt="Trailers and Extras">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <div class="Grid-item-card-title">
+                                    <a href="#">Trailers &amp; Extras</a>
+                                  </div>
+                                  <div class="Grid-item-card-headline">
+                                    <a href="#">Top 10 Wolverine Costumes!</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="Menu-Desktop-footer">
+                          <ul>
+                            <li>
+                              <h4>Our Shows</h4>
+                            </li>
+                            <li>
+                              <a href="#">Earth's Mightiest Show</a>
+                            </li>
+                            <li>
+                              <a href="#">This Week in Marvel</a>
+                            </li>
+                            <li>
+                              <a href="#">Women of Marvel</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="Menu-link">
+                    <a class="Menu-Desktop-link" href="./">
+                      Characters
+                    </a>
+                    <div class="Menu-Desktop Menu-Desktop-characters">
+                      <div class="Menu-Desktop-container">
+                        <div class="Menu-Desktop-header">
+                          <ul>
+                            <li>
+                              <a href="#">All Characters</a>
+                            </li>
+                            <li>
+                              <a href="#">Teams &amp; Groups</a>
+                            </li>
+                            <li>
+                              <a href="#">Explore All</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="Menu-Desktop-content">
+                          <h2 class="Menu-Desktop-content-title">
+                            Trending in the Universe
+                          </h2>
+                          <div class="submenu-character-grid">
+                            <div class="submenu-character-grid-item">
+                              <div class="submenu-character-grid-card">
+                                <div class="submenu-character-img-container">
+                                  <img class="submenu-character-img" src="./images/characters/015wsb_ons_crd_02 (1).jpg"
+                                    alt="">
+                                </div>
+                                <div class="submenu-character-description">
+                                  <div class="submenu-character-title">
+                                    Winter Soldier
+                                  </div>
+                                  <div class="submenu-character-copy">Bucky Barnes</div>
+                                </div>
+                              </div>
+
+
+                            </div>
+                            <div class="submenu-character-grid-item">
+                              <div class="submenu-character-grid-card">
+                                <div class="submenu-character-img-container">
+                                  <img class="submenu-character-img" src="./images/characters/433ybv_com_crd_01 (1).jpg"
+                                    alt="">
+                                </div>
+                                <div class="submenu-character-description">
+                                  <div class="submenu-character-title">
+                                    Black Widow
+                                  </div>
+                                  <div class="submenu-character-copy">Yelena Belova</div>
+                                </div>
+                              </div>
+
+
+                            </div>
+                            <div class="submenu-character-grid-item">
+                              <div class="submenu-character-grid-card">
+                                <div class="submenu-character-img-container">
+                                  <img class="submenu-character-img"
+                                    src="./images/characters/013vis_ons_crd_01-1 (1).jpg" alt="">
+                                </div>
+                                <div class="submenu-character-description">
+                                  <div class="submenu-character-title">
+                                    Vision
+                                  </div>
+                                  <div class="submenu-character-copy"></div>
+                                </div>
+                              </div>
+
+
+                            </div>
+                            <div class="submenu-character-grid-item">
+                              <div class="submenu-character-grid-card">
+                                <div class="submenu-character-img-container">
+                                  <img class="submenu-character-img" src="./images/characters/ikaris_com_crd_01 (1).jpg"
+                                    alt="">
+                                </div>
+                                <div class="submenu-character-description">
+                                  <div class="submenu-character-title">
+                                    Ikaris
+                                  </div>
+                                  <div class="submenu-character-copy"></div>
+                                </div>
+                              </div>
+
+
+                            </div>
+                            <div class="submenu-character-grid-item">
+                              <div class="submenu-character-grid-card">
+                                <div class="submenu-character-img-container">
+                                  <img class="submenu-character-img" src="./images/characters/017lok_ons_crd_02.jpg"
+                                    alt="">
+                                </div>
+                                <div class="submenu-character-description">
+                                  <div class="submenu-character-title">
+                                    Loki
+                                  </div>
+                                  <div class="submenu-character-copy"></div>
+                                </div>
+                              </div>
+
+
+                            </div>
+                            <div class="submenu-character-grid-item">
+                              <div class="submenu-character-grid-card">
+                                <div class="submenu-character-img-container">
+                                  <img class="submenu-character-img" src="./images/characters/303mgk_com_crd_01 (1).jpg"
+                                    alt="">
+                                </div>
+                                <div class="submenu-character-description">
+                                  <div class="submenu-character-title">
+                                    Magik
+                                  </div>
+                                  <div class="submenu-character-copy">Illyana Rasputin(a)</div>
+                                </div>
+                              </div>
+
+
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+
+
+                  <li class="Menu-link">
+                    <a class="Menu-Desktop-link" href="./">
+                      Comics
+                    </a>
+                    <div class="Menu-Desktop Menu-Desktop-comics">
+                      <div class="Menu-Desktop-container">
+                        <div class="Menu-Desktop-header">
+                          <ul>
+                            <li>
+                              <a href="#">Release Calendar</a>
+                            </li>
+                            <li>
+                              <a href="#">Marvel Unlimited</a>
+                            </li>
+                            <li>
+                              <a href="#">Shop Digital Comics</a>
+                            </li>
+                            <li>
+                              <a href="#">Reading Lists</a>
+                            </li>
+                            <li>
+                              <a href="#">Print Subscriptions</a>
+                            </li>
+                            <li>
+                              <a href="#">All Comics</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="Menu-Desktop-content">
+                          <h2 class="Menu-Desktop-content-title">
+                            Latest Comics
+                          </h2>
+                          <div class="Grid Grid-5">
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <img src="./images/comics/portrait_uncanny (38).jpg"
+                                    alt="Star Wars: Doctor Aphra (2020) #1">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <p class="Grid-item-card-title">
+                                    Taskmaster (2020) #1
+                                  </p>
+                                  <p class="Grid-item-card-subtitle">2020</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <img src="./images/comics/portrait_uncanny (40).jpg" alt="Avengers (2018) #33">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <p class="Grid-item-card-title">
+                                    Wolverine (2020) #7
+                                  </p>
+                                  <p class="Grid-item-card-subtitle">2020</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <img src="./images/comics/portrait_uncanny (39).jpg" alt="Venom (2018) #25">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <p class="Grid-item-card-title">
+                                    The Amazing Spider-Man (2018) #52
+                                  </p>
+                                  <p class="Grid-item-card-subtitle">2020</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <img src="./images/comics/portrait_uncanny (35).jpg"
+                                    alt="The Amazing Spider-Man (2018) #43">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <p class="Grid-item-card-title">
+                                    Excalibur (2019) #14
+                                  </p>
+                                  <p class="Grid-item-card-subtitle">2020</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <a href="#">
+                                  <div class="Grid-item-card-image">
+                                    <img src="./images/comics/portrait_uncanny (36).jpg" alt="Marauders (2019) #10">
+                                  </div>
+                                  <div class="Grid-item-card-content">
+                                    <p class="Grid-item-card-title">
+                                      Warhammer 40,000: Marneus Calgar (2020) #2
+                                    </p>
+                                    <p class="Grid-item-card-subtitle">2020</p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <img src="./images/comics/portrait_uncanny (37).jpg" alt="Avengers (2018) #33">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <p class="Grid-item-card-title">
+                                    Strange Academy (2020) #5
+                                  </p>
+                                  <p class="Grid-item-card-subtitle">2020</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="Menu-Desktop-footer">
+                          <ul>
+                            <li>
+                              <h4>Browse By</h4>
+                            </li>
+                            <li>
+                              <a href="#">Series</a>
+                            </li>
+                            <li>
+                              <a href="#">Character</a>
+                            </li>
+                            <li>
+                              <a href="#">Creator</a>
+                            </li>
+                            <li>
+                              <a href="#">Event</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="Menu-link">
+                    <a class="Menu-Desktop-link" href="./">
+                      Movies
+                    </a>
+                    <div class="Menu-Desktop Menu-Desktop-comics">
+                      <div class="Menu-Desktop-container">
+                        <div class="Menu-Desktop-header">
+                          <ul>
+                            <li>
+                              <a href="#">BLACK WIDOW</a>
+                            </li>
+                            <li>
+                              <a href="#">AVENGERS: ENDGAME</a>
+                            </li>
+                            <li>
+                              <a href="#">CAPTAIN MARVEL</a>
+                            </li>
+                            <li>
+                              <a href="#">See all movies</a>
+                            </li>
+                            <li>
+                              <a href="#">disney +</a>
+                            </li>
+
+                          </ul>
+                        </div>
+                        <div class="Menu-Desktop-content">
+                          <h2 class="Menu-Desktop-content-title">
+                            MOVIES
+                          </h2>
+                          <div class="Grid Grid-5">
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <img src="./images/movies/blackwidow_lob_crd_04 (1).jpg"
+                                    alt="Star Wars: Doctor Aphra (2020) #1">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <p class="Grid-item-card-title">
+                                    Black Widow
+                                  </p>
+                                  <p class="Grid-item-card-subtitle">MAY 7, 2021</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <img src="./images/movies/spider-manfarfromhome_lob_crd_04_3 (2).jpg"
+                                    alt="Avengers (2018) #33">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <p class="Grid-item-card-title">
+                                    Spider-Man: Far From Home
+                                  </p>
+                                  <p class="Grid-item-card-subtitle">2019</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <img src="./images/movies/darkphoenix_lob_crd_01.jpg" alt="Venom (2018) #25">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <p class="Grid-item-card-title">
+                                    X-Men: Dark Phoenix
+                                  </p>
+                                  <p class="Grid-item-card-subtitle">2019</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <img src="./images/movies/avengersendgame_lob_crd_05_2.jpg"
+                                    alt="The Amazing Spider-Man (2018) #43">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <p class="Grid-item-card-title">
+                                    Avengers: Endgame
+                                  </p>
+                                  <p class="Grid-item-card-subtitle">2019</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <a href="#">
+                                  <div class="Grid-item-card-image">
+                                    <img src="./images/movies/captainmarvel_lob_crd_06.jpg" alt="Marauders (2019) #10">
+                                  </div>
+                                  <div class="Grid-item-card-content">
+                                    <p class="Grid-item-card-title">
+                                      Captain Marvel
+                                    </p>
+                                    <p class="Grid-item-card-subtitle">2019</p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <a href="#">
+                                  <div class="Grid-item-card-image">
+                                    <img src="./images/movies/avengersinfinitywar_lob_crd_02_1.jpg"
+                                      alt="Marauders (2019) #10">
+                                  </div>
+                                  <div class="Grid-item-card-content">
+                                    <p class="Grid-item-card-title">
+                                      Avengers: Infinity War
+                                    </p>
+                                    <p class="Grid-item-card-subtitle">2018</p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </li>
+                  <li class="Menu-link">
+                    <a class="Menu-Desktop-link" href="./">
+                      TV Shows
+                    </a>
+                    <div class="Menu-Desktop Menu-Desktop-comics">
+                      <div class=" Menu-Desktop-container">
+                        <div class="Menu-Desktop-header">
+                          <ul>
+                            <li>
+                              <a href="#">Marvel's Runaways | Season 3</a>
+                            </li>
+                            <li>
+                              <a href="#">Marvel's Hero Project | Season 1</a>
+                            </li>
+                            <li>
+                              <a href="#">Marvel Rising | Season 1</a>
+                            </li>
+                            <li>
+                              <a href="#">See All TV Shows</a>
+                            </li>
+                            <li>
+                              <a href="#">Disney+</a>
+                            </li>
+
+                          </ul>
+                        </div>
+                        <div class="Menu-Desktop-content">
+                          <h2 class="Menu-Desktop-content-title">
+                            TV Shows
+                          </h2>
+                          <div class="Grid Grid-5">
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <img src="./images/tvshows/disneyplus_wandavision_lob_crd_04_3.png"
+                                    alt="Star Wars: Doctor Aphra (2020) #1">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <p class="Grid-item-card-title">
+                                    WandaVision | Season 1
+                                  </p>
+                                  <p class="Grid-item-card-subtitle">2020</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <img src="./images/tvshows/agentsofshield_lob_crd_03.jpg" alt="Avengers (2018) #33">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <p class="Grid-item-card-title">
+                                    Marvel's Agents of S.H.I.E.L.D. | Season 7
+                                  </p>
+                                  <p class="Grid-item-card-subtitle">2020</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <img src="./images/tvshows/runaways_s3_lob_crd_03 (1).jpg" alt="Venom (2018) #25">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <p class="Grid-item-card-title">
+                                    Marvel's Runaways | Season 3
+                                  </p>
+                                  <p class="Grid-item-card-subtitle">2019</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <img src="./images/tvshows/marvelsheroproject_lob_crd_01.jpg"
+                                    alt="The Amazing Spider-Man (2018) #43">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <p class="Grid-item-card-title">
+                                    Marvel's Hero Project | Season 1
+                                  </p>
+                                  <p class="Grid-item-card-subtitle">2019</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <a href="#">
+                                  <div class="Grid-item-card-image">
+                                    <img src="./images/tvshows/animatedmarvelrising_lob_crd_01.jpg"
+                                      alt="Marauders (2019) #10">
+                                  </div>
+                                  <div class="Grid-item-card-content">
+                                    <p class="Grid-item-card-title">
+                                      Marvel Rising | Season 1
+                                    </p>
+                                    <p class="Grid-item-card-subtitle">2018</p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <a href="#">
+                                  <div class="Grid-item-card-image">
+                                    <img src="./images/tvshows/cloakanddagger_lob_crd_02_1.jpg"
+                                      alt="Marauders (2019) #10">
+                                  </div>
+                                  <div class="Grid-item-card-content">
+                                    <p class="Grid-item-card-title">
+                                      Marvel's Cloak & Dagger | Season 2
+                                    </p>
+                                    <p class="Grid-item-card-subtitle">2019</p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </li>
+                  <li class="Menu-link">
+                    <a class="Menu-Desktop-link" href="./">
+                      Games
+                    </a>
+                    <div class="Menu-Desktop Menu-Desktop-comics">
+                      <div class="Menu-Desktop-container">
+                        <div class="Menu-Desktop-header">
+                          <ul>
+                            <li>
+                              <a href="#">Marvel's Avengers</a>
+                            </li>
+                            <li>
+                              <a href="#">Marvel's Iron Man VR</a>
+                            </li>
+                            <li>
+                              <a href="#">Marvel Contest of Champions</a>
+                            </li>
+                            <li>
+                              <a href="#">See all Games</a>
+                            </li>
+
+                          </ul>
+                        </div>
+                        <div class="Menu-Desktop-content">
+                          <h2 class="Menu-Desktop-content-title">
+                            GAMES
+                          </h2>
+                          <div class="Grid Grid-5">
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <img src="./images/games/marvelsironmanvr_lob_crd_02.jpg"
+                                    alt="Star Wars: Doctor Aphra (2020) #1">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <p class="Grid-item-card-title">
+                                    Marvel's Iron Man VR
+                                  </p>
+                                  <p class="Grid-item-card-subtitle">2020</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <img src="./images/games/donut_lob_crd_01_1 (1).jpg" alt="Avengers (2018) #33">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <p class="Grid-item-card-title">
+                                    Fornite
+                                  </p>
+                                  <p class="Grid-item-card-subtitle">2020</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <img src="./images/games/marvelsavengers_lob_crd_01.jpg" alt="Venom (2018) #25">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <p class="Grid-item-card-title">
+                                    Marvel’s Avengers
+                                  </p>
+                                  <p class="Grid-item-card-subtitle">2020</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <img src="./images/games/msmmm_lob_crd_02.jpg"
+                                    alt="The Amazing Spider-Man (2018) #43">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <p class="Grid-item-card-title">
+                                    Marvel’s Spider-Man: Miles Morales
+                                  </p>
+                                  <p class="Grid-item-card-subtitle">NOV 12, 2020</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <a href="#">
+                                  <div class="Grid-item-card-image">
+                                    <img src="./images/games/marvelcontestofchapions_lob_crd_01 (1).jpg"
+                                      alt="Marauders (2019) #10">
+                                  </div>
+                                  <div class="Grid-item-card-content">
+                                    <p class="Grid-item-card-title">
+                                      Marvel Contest of Champions
+                                    </p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <a href="#">
+                                  <div class="Grid-item-card-image">
+                                    <img src="./images/games/marvelstrikeforce_lob_crd_01 (1).jpg"
+                                      alt="Marauders (2019) #10">
+                                  </div>
+                                  <div class="Grid-item-card-content">
+                                    <p class="Grid-item-card-title">
+                                      Marvel Strike Force
+                                    </p>
+
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </li>
+                  <li class="Menu-link">
+                    <a class="Menu-Desktop-link" href="./">NEWS</a>
+
+                    <div class="Menu-Desktop Menu-Desktop-videos">
+                      <div class=" Menu-Desktop-container">
+                        <div class="Menu-Desktop-header">
+                          <ul>
+                            <li>
+                              <a href="#">latest news</a>
+                            </li>
+                            <li>
+                              <a href="#">all news</a>
+                            </li>
+
+                          </ul>
+                        </div>
+                        <div class="Menu-Desktop-content">
+                          <h2 class="Menu-Desktop-content-title">
+                            Trending News
+                          </h2>
+                          <div class="Grid">
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <a class="Grid-item-overlay" href="#">
+                                    <span class="Grid-item-overlay-icon">
+                                      <i class="play-icon"></i>
+                                    </span>
+                                    <p class="Grid-item-overlay-duration">
+                                      12:16
+                                    </p>
+                                    <div class="Grid-item-overlay-insider">
+                                      <span class="Icon-svg Icon-insider-circle">
+                                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 463 463">
+                                          <defs>
+                                            <style>
+                                              .cls-1 {
+                                                opacity: 0.4;
+                                              }
+
+                                              .cls-2 {
+                                                fill: #fff;
+                                              }
+
+                                              .cls-3 {
+                                                fill: #e8b63e;
+                                              }
+
+                                              .cls-4 {
+                                                fill: #202020;
+                                              }
+                                            </style>
+                                          </defs>
+                                          <title>Artboard 1</title>
+                                          <g class="cls-1">
+                                            <circle class="cls-2" cx="231.5" cy="231.5" r="195"></circle>
+                                            <path class="cls-3"
+                                              d="M231.5 64A167.5 167.5 0 1 1 64 231.5 167.5 167.5 0 0 1 231.5 64m0-55a222.54 222.54 0 0 0-86.62 427.49 222.54 222.54 0 0 0 173.24-410A221.08 221.08 0 0 0 231.5 9z">
+                                            </path>
+                                          </g>
+                                          <circle class="cls-2" cx="231.5" cy="231.5" r="167.5"></circle>
+                                          <path class="cls-4"
+                                            d="M369.78 137l-33.27 187.65a3.18 3.18 0 0 1-3.2 2.91h-33.49a4.26 4.26 0 0 1-4.08-2.91l-45.43-127.27h-1.45l-22.43 127.27a3.13 3.13 0 0 1-2.91 2.91h-31.45a2.42 2.42 0 0 1-2.63-2.91l34.08-192.21a3.17 3.17 0 0 1 3.2-2.92h33.2c2.33 0 3.79.88 4.37 2.92l45.14 127.26h1.17l28.16-156.83A167.47 167.47 0 0 0 111 347.73l37.73-215.29a3.18 3.18 0 0 1 3.21-2.92h35.23c1.75 0 2.62 1.17 2.33 2.92L146.77 376a167.48 167.48 0 0 0 223-239z">
+                                          </path>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                  </a>
+                                  <img src="./images/news/kib-fantastic-four_card.jpg" alt="Thanos">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <div class="Grid-item-card-title">
+                                    <a href="#">COMICS</span></a>
+                                  </div>
+                                  <div class="Grid-item-card-headline">
+                                    <a href="#">The King in Black Is Coming for the Fantastic Four This February</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <a class="Grid-item-overlay" href="#">
+                                    <span class="Grid-item-overlay-icon">
+                                      <i class="play-icon"></i>
+                                    </span>
+                                    <p class="Grid-item-overlay-duration">
+                                      12:16
+                                    </p>
+                                    <div class="Grid-item-overlay-insider">
+                                      <span class="Icon-svg Icon-insider-circle">
+                                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 463 463">
+                                          <defs>
+                                            <style>
+                                              .cls-1 {
+                                                opacity: 0.4;
+                                              }
+
+                                              .cls-2 {
+                                                fill: #fff;
+                                              }
+
+                                              .cls-3 {
+                                                fill: #e8b63e;
+                                              }
+
+                                              .cls-4 {
+                                                fill: #202020;
+                                              }
+                                            </style>
+                                          </defs>
+                                          <title>Artboard 1</title>
+                                          <g class="cls-1">
+                                            <circle class="cls-2" cx="231.5" cy="231.5" r="195"></circle>
+                                            <path class="cls-3"
+                                              d="M231.5 64A167.5 167.5 0 1 1 64 231.5 167.5 167.5 0 0 1 231.5 64m0-55a222.54 222.54 0 0 0-86.62 427.49 222.54 222.54 0 0 0 173.24-410A221.08 221.08 0 0 0 231.5 9z">
+                                            </path>
+                                          </g>
+                                          <circle class="cls-2" cx="231.5" cy="231.5" r="167.5"></circle>
+                                          <path class="cls-4"
+                                            d="M369.78 137l-33.27 187.65a3.18 3.18 0 0 1-3.2 2.91h-33.49a4.26 4.26 0 0 1-4.08-2.91l-45.43-127.27h-1.45l-22.43 127.27a3.13 3.13 0 0 1-2.91 2.91h-31.45a2.42 2.42 0 0 1-2.63-2.91l34.08-192.21a3.17 3.17 0 0 1 3.2-2.92h33.2c2.33 0 3.79.88 4.37 2.92l45.14 127.26h1.17l28.16-156.83A167.47 167.47 0 0 0 111 347.73l37.73-215.29a3.18 3.18 0 0 1 3.21-2.92h35.23c1.75 0 2.62 1.17 2.33 2.92L146.77 376a167.48 167.48 0 0 0 223-239z">
+                                          </path>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                  </a>
+                                  <img src="./images/news/carnage_1.jpg" alt="Marvel Heads Up!">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <div class="Grid-item-card-title">
+                                    <a href="#">GEAR</a>
+                                  </div>
+                                  <div class="Grid-item-card-headline">
+                                    <a href="#">Venom and Carnage Comic-Based Figures Arrive at ShopDisney to Wreak
+                                      Havoc</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <a class="Grid-item-overlay" href="#">
+                                    <span class="Grid-item-overlay-icon">
+                                      <i class="play-icon"></i>
+                                    </span>
+                                    <p class="Grid-item-overlay-duration">
+                                      12:16
+                                    </p>
+                                    <div class="Grid-item-overlay-insider">
+                                      <span class="Icon-svg Icon-insider-circle">
+                                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 463 463">
+                                          <defs>
+                                            <style>
+                                              .cls-1 {
+                                                opacity: 0.4;
+                                              }
+
+                                              .cls-2 {
+                                                fill: #fff;
+                                              }
+
+                                              .cls-3 {
+                                                fill: #e8b63e;
+                                              }
+
+                                              .cls-4 {
+                                                fill: #202020;
+                                              }
+                                            </style>
+                                          </defs>
+                                          <title>Artboard 1</title>
+                                          <g class="cls-1">
+                                            <circle class="cls-2" cx="231.5" cy="231.5" r="195"></circle>
+                                            <path class="cls-3"
+                                              d="M231.5 64A167.5 167.5 0 1 1 64 231.5 167.5 167.5 0 0 1 231.5 64m0-55a222.54 222.54 0 0 0-86.62 427.49 222.54 222.54 0 0 0 173.24-410A221.08 221.08 0 0 0 231.5 9z">
+                                            </path>
+                                          </g>
+                                          <circle class="cls-2" cx="231.5" cy="231.5" r="167.5"></circle>
+                                          <path class="cls-4"
+                                            d="M369.78 137l-33.27 187.65a3.18 3.18 0 0 1-3.2 2.91h-33.49a4.26 4.26 0 0 1-4.08-2.91l-45.43-127.27h-1.45l-22.43 127.27a3.13 3.13 0 0 1-2.91 2.91h-31.45a2.42 2.42 0 0 1-2.63-2.91l34.08-192.21a3.17 3.17 0 0 1 3.2-2.92h33.2c2.33 0 3.79.88 4.37 2.92l45.14 127.26h1.17l28.16-156.83A167.47 167.47 0 0 0 111 347.73l37.73-215.29a3.18 3.18 0 0 1 3.21-2.92h35.23c1.75 0 2.62 1.17 2.33 2.92L146.77 376a167.48 167.48 0 0 0 223-239z">
+                                          </path>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                  </a>
+                                  <img src="./images/news/clean_copy_24.jpg">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <div class="Grid-item-card-title">
+                                    <a href="#">COMICS</a>
+                                  </div>
+                                  <div class="Grid-item-card-headline">
+                                    <a href="#">How 'X of Swords' Reveals the Hidden History of Arakko</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Grid-item">
+                              <div class="Grid-item-card">
+                                <div class="Grid-item-card-image">
+                                  <a class="Grid-item-overlay" href="#">
+                                    <span class="Grid-item-overlay-icon">
+                                      <i class="play-icon"></i>
+                                    </span>
+                                    <p class="Grid-item-overlay-duration">
+                                      12:16
+                                    </p>
+                                    <div class="Grid-item-overlay-insider">
+                                      <span class="Icon-svg Icon-insider-circle">
+                                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 463 463">
+                                          <defs>
+                                            <style>
+                                              .cls-1 {
+                                                opacity: 0.4;
+                                              }
+
+                                              .cls-2 {
+                                                fill: #fff;
+                                              }
+
+                                              .cls-3 {
+                                                fill: #e8b63e;
+                                              }
+
+                                              .cls-4 {
+                                                fill: #202020;
+                                              }
+                                            </style>
+                                          </defs>
+                                          <title>Artboard 1</title>
+                                          <g class="cls-1">
+                                            <circle class="cls-2" cx="231.5" cy="231.5" r="195"></circle>
+                                            <path class="cls-3"
+                                              d="M231.5 64A167.5 167.5 0 1 1 64 231.5 167.5 167.5 0 0 1 231.5 64m0-55a222.54 222.54 0 0 0-86.62 427.49 222.54 222.54 0 0 0 173.24-410A221.08 221.08 0 0 0 231.5 9z">
+                                            </path>
+                                          </g>
+                                          <circle class="cls-2" cx="231.5" cy="231.5" r="167.5"></circle>
+                                          <path class="cls-4"
+                                            d="M369.78 137l-33.27 187.65a3.18 3.18 0 0 1-3.2 2.91h-33.49a4.26 4.26 0 0 1-4.08-2.91l-45.43-127.27h-1.45l-22.43 127.27a3.13 3.13 0 0 1-2.91 2.91h-31.45a2.42 2.42 0 0 1-2.63-2.91l34.08-192.21a3.17 3.17 0 0 1 3.2-2.92h33.2c2.33 0 3.79.88 4.37 2.92l45.14 127.26h1.17l28.16-156.83A167.47 167.47 0 0 0 111 347.73l37.73-215.29a3.18 3.18 0 0 1 3.21-2.92h35.23c1.75 0 2.62 1.17 2.33 2.92L146.77 376a167.48 167.48 0 0 0 223-239z">
+                                          </path>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                  </a>
+                                  <img src="./images/news/kib-captain-america_card.jpg" alt="Trailers and Extras">
+                                </div>
+                                <div class="Grid-item-card-content">
+                                  <div class="Grid-item-card-title">
+                                    <a href="#">COMICS</a>
+                                  </div>
+                                  <div class="Grid-item-card-headline">
+                                    <a href="#">Steve Rogers Faces Down the Symbiotes This February in 'King in Black:
+                                      Captain America' #1</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="Menu-Desktop-footer">
+                          <ul>
+                            <li>
+                              <h4>SEARCH BY</h4>
+                            </li>
+                            <li>
+                              <a href="#">MOVIES</a>
+                            </li>
+                            <li>
+                              <a href="#">COMICS</a>
+                            </li>
+                            <li>
+                              <a href="#">TV SHOWS</a>
+                            </li>
+                            <li>
+                              <a href="#">GAMES</a>
+                            </li>
+                            <li>
+                              <a href="#">DIGITAL SERIES</a>
+                            </li>
+                            <li>
+                              <a href="#">CULTURE & LIFESTYLE</a>
+                            </li>
+                            <li>
+                              <a href="#">PODCASTS</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="Menu-link">
+                    <a class="Menu-Desktop-link" href="./">
+                      MORE
+                    </a>
+
+                    <div class="Menu-Desktop Menu-Desktop-more">
+                      <div class="submenu-container">
+
+                        <div class="submenu-listOne-more">
+                          <ul class="submenu-listOne-more-list">
+                            <li class="submenu-listOne-more-item"><a
+                                style="font-size: 26px;letter-spacing: 2px;line-height: 1" href="">CULTURE &
+                                LIFESTYLE</a></li>
+                            <li class="submenu-listOne-more-item"><a
+                                style="font-size: 26px;letter-spacing: 2px;line-height: 1" href="">PODCASTS</a></li>
+                            <li class="submenu-listOne-more-item"><a
+                                style="font-size: 26px;letter-spacing: 2px;line-height: 1" href="">SHOP</a></li>
+                            <li class="submenu-listOne-more-item"><a
+                                style="font-size: 26px;letter-spacing: 2px;line-height: 1" href="">MARVEL
+                                MASTERCARD®</a></li>
+                          </ul>
+                        </div>
+                        <div class="footer-submenu-more">
+                          <div class="footer-submenu-more-container">
+                            <div class="footer-submenu-more-list">
+                              <ul class="footer-submenu-more-list-icons">
+                                <li class="footer-submenu-more-list-icons-item"><img
+                                    src="./images/icons/SVG/facebook2.svg" alt=""></li>
+                                <li class="footer-submenu-more-list-icons-item"><img
+                                    src="./images/icons/SVG/twitter.svg" alt=""></li>
+                                <li class="footer-submenu-more-list-icons-item"><img
+                                    src="./images/icons/SVG/instagram.svg" alt=""></li>
+                                <li class="footer-submenu-more-list-icons-item"><img src="./images/icons/SVG/tumblr.svg"
+                                    alt=""></li>
+                                <li class="footer-submenu-more-list-icons-item"><img
+                                    src="./images/icons/SVG/youtube.svg" alt=""></li>
+                                <li class="footer-submenu-more-list-icons-item"><img
+                                    src="./images/icons/SVG/snapchat-ghost.svg" alt="">
+                                </li>
+                                <li class="footer-submenu-more-list-icons-item"><img
+                                    src="./images/icons/SVG/pinterest.svg" alt=""></li>
+                              </ul>
+                            </div>
+
+                            <div class="menuLeft-marvelMaster">
+                              <div class="menuLeft-marvelMaster-container submenu">
+                                <div class="menuLeft-marvelMaster-item submenu">
+                                  <figure class="menuLeft-marvelMaster-item-submenu-figure"><img
+                                      src="./images/nav-logos-insider.png" alt=""></figure>
+                                  <div class="marvelMaster-description">
+                                    <div class="marvelMaster-description-title">MARVEL INSIDER</div>
+                                    <div class="marvelMaster-description-copy">Get rewarded for being a Marvel Fan</div>
+                                  </div>
+                                </div>
+                                <div class="menuLeft-marvelMaster-item submenu">
+                                  <figure class="menuLeft-marvelMaster-item-submenu-figure"><img
+                                      src="./images/marvel_mastercard_promo-268x118_0-nav-flyout-v4.png" alt="">
+                                  </figure>
+                                  <div class="marvelMaster-description">
+                                    <div class="marvelMaster-description-title">MARVEL MASTER CARD®</div>
+                                    <div class="marvelMaster-description-copy">6 Card Designs—Unlimited Cashback</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </li>
+
+
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- MENU LEFT -->
+    <div class="Menu isActive">
+      <a href="#" class="Menu-close">
+        <span class="Icon-svg Icon-svg-white-stroke">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16">
+            <path d="M-1-3L10.314 8.314M13 11l11.314 11.314M24.142-6L-4.142 22.284"></path>
+          </svg>
+        </span>
+      </a>
+      <div class="Menu-nav-container">
+        <nav class="Menu-nav-links">
+          <ul>
+            <li>
+              <a class="Menu-nav-item Submenu-open" href="#">
+                Videos
+                <span class="Icon-svg Icon-svg-red-stroke Icon-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16" viewBox="0 0 11 16">
+                    <path fill="none" d="M-.851-3L9.232 8-2.75 21.071"></path>
+                  </svg>
+                </span>
+              </a>
+              <div class="Submenu">
+                <a href="#" class="Submenu-back">
+                  <span class="Icon-svg Icon-svg-red-stroke Icon-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16" viewBox="0 0 11 16">
+                      <path fill="none" d="M11.851-3L1.768 8 13.75 21.071"></path>
+                    </svg>
+                  </span>
+                  Videos
+                </a>
+                <nav class="Submenu-nav">
+                  <ul>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        Trailers &amp; Extras
+                      </a>
+                    </li>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        Digital Series
+                      </a>
+                    </li>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        All Video
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="Submenu-secondary">
+                  <span class="Submenu-secondary-title">Our Shows</span>
+                  <nav class="Submenu-secondary-nav">
+                    <ul>
+                      <li>
+                        <a class="Submenu-link" href="#">
+                          Earth's Mightiest Show
+                        </a>
+                      </li>
+                      <li>
+                        <a class="Submenu-link" href="#">
+                          This week in Marvel
+                        </a>
+                      </li>
+                      <li>
+                        <a class="Submenu-link" href="#">
+                          Women of Marvel
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="Menu-nav-item Submenu-open" href="#">
+                Characters
+                <span class="Icon-svg Icon-svg-red-stroke Icon-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16" viewBox="0 0 11 16">
+                    <path fill="none" d="M-.851-3L9.232 8-2.75 21.071"></path>
+                  </svg>
+                </span>
+              </a>
+              <div class="Submenu">
+                <a href="#" class="Submenu-back">
+                  <span class="Icon-svg Icon-svg-red-stroke Icon-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16" viewBox="0 0 11 16">
+                      <path fill="none" d="M11.851-3L1.768 8 13.75 21.071"></path>
+                    </svg>
+                  </span>
+                  Characters
+                </a>
+                <nav class="Submenu-nav">
+                  <ul>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        All Characters
+                      </a>
+                    </li>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        Teams &amp; Groups
+                      </a>
+                    </li>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        Explore all
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </li>
+            <li>
+              <a class="Menu-nav-item Submenu-open" href="#">
+                Comics
+                <span class="Icon-svg Icon-svg-red-stroke Icon-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16" viewBox="0 0 11 16">
+                    <path fill="none" d="M-.851-3L9.232 8-2.75 21.071"></path>
+                  </svg>
+                </span>
+              </a>
+              <div class="Submenu">
+                <a href="#" class="Submenu-back">
+                  <span class="Icon-svg Icon-svg-red-stroke Icon-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16" viewBox="0 0 11 16">
+                      <path fill="none" d="M11.851-3L1.768 8 13.75 21.071"></path>
+                    </svg>
+                  </span>
+                  Comics
+                </a>
+                <nav class="Submenu-nav">
+                  <ul>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        Release Calendar
+                      </a>
+                    </li>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        Marvel Unlimited
+                      </a>
+                    </li>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        Shop Digital Comics
+                      </a>
+                    </li>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        Reading Lists
+                      </a>
+                    </li>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        Print Subscriptions
+                      </a>
+                    </li>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        All Comics
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="Submenu-secondary">
+                  <span class="Submenu-secondary-title">Browse By</span>
+                  <nav class="Submenu-secondary-nav">
+                    <ul>
+                      <li>
+                        <a class="Submenu-link" href="#">
+                          Series
+                        </a>
+                      </li>
+                      <li>
+                        <a class="Submenu-link" href="#">
+                          Character
+                        </a>
+                      </li>
+                      <li>
+                        <a class="Submenu-link" href="#">
+                          Creator
+                        </a>
+                      </li>
+                      <li>
+                        <a class="Submenu-link" href="#">
+                          Event
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="Menu-nav-item Submenu-open" href="#">
+                Movies
+                <span class="Icon-svg Icon-svg-red-stroke Icon-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16" viewBox="0 0 11 16">
+                    <path fill="none" d="M-.851-3L9.232 8-2.75 21.071"></path>
+                  </svg>
+                </span>
+              </a>
+              <div class="Submenu">
+                <a href="#" class="Submenu-back">
+                  <span class="Icon-svg Icon-svg-red-stroke Icon-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16" viewBox="0 0 11 16">
+                      <path fill="none" d="M11.851-3L1.768 8 13.75 21.071"></path>
+                    </svg>
+                  </span>
+                  Movies
+                </a>
+                <nav class="Submenu-nav">
+                  <ul>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        Black Widow
+                      </a>
+                    </li>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        Avengers: Endgame
+                      </a>
+                    </li>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        Captain Marvel
+                      </a>
+                    </li>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        See all movies
+                      </a>
+                    </li>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        Disney+
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </li>
+            <li>
+              <a class="Menu-nav-item Submenu-open" href="#">
+                TV Shows
+                <span class="Icon-svg Icon-svg-red-stroke Icon-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16" viewBox="0 0 11 16">
+                    <path fill="none" d="M-.851-3L9.232 8-2.75 21.071"></path>
+                  </svg>
+                </span>
+              </a>
+              <div class="Submenu">
+                <a href="#" class="Submenu-back">
+                  <span class="Icon-svg Icon-svg-red-stroke Icon-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16" viewBox="0 0 11 16">
+                      <path fill="none" d="M11.851-3L1.768 8 13.75 21.071"></path>
+                    </svg>
+                  </span>
+                  TV Shows
+                </a>
+                <nav class="Submenu-nav">
+                  <ul>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        Marvel's Runaways | Season 3
+                      </a>
+                    </li>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        Marvel's Hero Project | Season 1
+                      </a>
+                    </li>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        Marvel Rising | Season 1
+                      </a>
+                    </li>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        See all TV Shows
+                      </a>
+                    </li>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        Disney+
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </li>
+            <li>
+              <a class="Menu-nav-item Submenu-open" href="#">
+                Games
+                <span class="Icon-svg Icon-svg-red-stroke Icon-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16" viewBox="0 0 11 16">
+                    <path fill="none" d="M-.851-3L9.232 8-2.75 21.071"></path>
+                  </svg>
+                </span>
+              </a>
+              <div class="Submenu">
+                <a href="#" class="Submenu-back">
+                  <span class="Icon-svg Icon-svg-red-stroke Icon-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16" viewBox="0 0 11 16">
+                      <path fill="none" d="M11.851-3L1.768 8 13.75 21.071"></path>
+                    </svg>
+                  </span>
+                  Games
+                </a>
+                <nav class="Submenu-nav">
+                  <ul>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        Marvel Ultimate Alliance 3
+                      </a>
+                    </li>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        Marvel's Iron Man VR
+                      </a>
+                    </li>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        Marvel Contest of Champions
+                      </a>
+                    </li>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        See all games
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </li>
+            <li>
+              <a class="Menu-nav-item Submenu-open" href="#">
+                News
+                <span class="Icon-svg Icon-svg-red-stroke Icon-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16" viewBox="0 0 11 16">
+                    <path fill="none" d="M-.851-3L9.232 8-2.75 21.071"></path>
+                  </svg>
+                </span>
+              </a>
+              <div class="Submenu">
+                <a href="#" class="Submenu-back">
+                  <span class="Icon-svg Icon-svg-red-stroke Icon-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16" viewBox="0 0 11 16">
+                      <path fill="none" d="M11.851-3L1.768 8 13.75 21.071"></path>
+                    </svg>
+                  </span>
+                  News
+                </a>
+                <nav class="Submenu-nav">
+                  <ul>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        Latest News
+                      </a>
+                    </li>
+                    <li>
+                      <a class="Submenu-link" href="#">
+                        All News
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="Submenu-secondary">
+                  <span class="Submenu-secondary-title">Search By</span>
+                  <nav class="Submenu-secondary-nav">
+                    <ul>
+                      <li>
+                        <a class="Submenu-link" href="#">
+                          Movies
+                        </a>
+                      </li>
+                      <li>
+                        <a class="Submenu-link" href="#">
+                          Comics
+                        </a>
+                      </li>
+                      <li>
+                        <a class="Submenu-link" href="#">
+                          TV Shows
+                        </a>
+                      </li>
+                      <li>
+                        <a class="Submenu-link" href="#">
+                          Games
+                        </a>
+                      </li>
+                      <li>
+                        <a class="Submenu-link" href="#">
+                          Digital Series
+                        </a>
+                      </li>
+                      <li>
+                        <a class="Submenu-link" href="#">
+                          Culture &amp; Lifestyle
+                        </a>
+                      </li>
+                      <li>
+                        <a class="Submenu-link" href="#">
+                          Podcasts
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="Menu-nav-item" href="#">
+                Culture &amp; Lifestyle
+              </a>
+            </li>
+            <li>
+              <a class="Menu-nav-item" href="#">
+                Podcasts
+              </a>
+            </li>
+            <li>
+              <a class="Menu-nav-item" href="#">
+                Shop
+              </a>
+            </li>
+            <li>
+              <a class="Menu-nav-item" href="#">
+                Marvel Mastercard®
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="Menu-user-container">
+        <p class="Menu-user-title">Marvel Insider</p>
+        <nav>
+          <ul>
+            <li>
+              <a class="Menu-nav-item Modal-open" href="#">Sign In</a>
+            </li>
+            <li>
+              <a class="Menu-nav-item Modal-Join-open" href="#">Join</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="Menu-social-container">
+        <div class="Social-links">
+          <a href="#" class="Social-link">
+            <span class="Icon-svg Icon-svg-gray-fill Icon-facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                <path fill-rule="evenodd"
+                  d="M9.426 17.647H.974A.974.974 0 0 1 0 16.673V.974C0 .436.436 0 .974 0h15.7c.537 0 .973.436.973.974v15.699a.974.974 0 0 1-.974.974h-4.497v-6.834h2.294l.343-2.663h-2.637v-1.7c0-.772.214-1.297 1.32-1.297h1.41V2.77a18.853 18.853 0 0 0-2.055-.105c-2.033 0-3.425 1.241-3.425 3.52V8.15h-2.3v2.663h2.3v6.834z">
+                </path>
+              </svg>
+            </span>
+          </a>
+          <a href="#" class="Social-link">
+            <span class="Icon-svg Icon-svg-gray-fill Icon-twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15">
+                <path fill-rule="evenodd"
+                  d="M17.647 1.74a7.072 7.072 0 0 1-2.079.585A3.704 3.704 0 0 0 17.16.272a7.13 7.13 0 0 1-2.3.9A3.57 3.57 0 0 0 12.217 0C10.22 0 8.598 1.662 8.598 3.712c0 .291.031.574.093.846-3.009-.155-5.676-1.632-7.463-3.88a3.78 3.78 0 0 0-.49 1.868c0 1.287.64 2.424 1.611 3.09a3.555 3.555 0 0 1-1.64-.463v.045c0 1.8 1.248 3.3 2.905 3.64-.304.088-.624.131-.954.131-.233 0-.461-.022-.682-.066.461 1.475 1.798 2.549 3.382 2.577A7.149 7.149 0 0 1 0 13.04a10.08 10.08 0 0 0 5.55 1.666c6.66 0 10.3-5.656 10.3-10.562 0-.162-.002-.323-.008-.482a7.43 7.43 0 0 0 1.805-1.921">
+                </path>
+              </svg>
+            </span>
+          </a>
+          <a href="#" class="Social-link">
+            <span class="Icon-svg Icon-svg-gray-fill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                <path fill-rule="evenodd"
+                  d="M15.441 15.993H2.206a.552.552 0 0 1-.552-.552V7.17H3.86c-.287.414-.384 1.185-.384 1.675 0 2.953 2.408 5.356 5.368 5.356 2.96 0 5.368-2.403 5.368-5.356 0-.49-.069-1.25-.425-1.675h2.206v8.272a.552.552 0 0 1-.552.552M8.844 5.458a3.39 3.39 0 0 1 3.394 3.386 3.39 3.39 0 0 1-3.394 3.386A3.39 3.39 0 0 1 5.45 8.844a3.39 3.39 0 0 1 3.393-3.386m4.391-3.252h1.655c.304 0 .551.247.551.551v1.655a.552.552 0 0 1-.551.551h-1.655a.552.552 0 0 1-.551-.551V2.757c0-.304.247-.551.551-.551M15.55 0H2.098A2.095 2.095 0 0 0 0 2.093v13.461c0 1.156.94 2.093 2.098 2.093h13.451a2.095 2.095 0 0 0 2.098-2.093V2.093C17.647.937 16.707 0 15.549 0">
+                </path>
+              </svg>
+            </span>
+          </a>
+          <a href="#" class="Social-link">
+            <span class="Icon-svg Icon-svg-gray-fill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18">
+                <path fill-rule="evenodd"
+                  d="M8.535 14.5c-1.532.038-1.83-1-1.842-1.751V7.217h3.844v-2.69h-3.83V0H3.904a.147.147 0 0 0-.138.133C3.602 1.518 2.904 3.949 0 4.922v2.295h1.937v5.806c0 1.988 1.58 4.812 5.749 4.745 1.407-.022 2.969-.569 3.314-1.04l-.92-2.535c-.356.158-1.037.295-1.545.307z">
+                </path>
+              </svg>
+            </span>
+          </a>
+          <a href="#" class="Social-link">
+            <span class="Icon-svg Icon-svg-gray-fill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15">
+                <path fill-rule="evenodd"
+                  d="M8.109 9.73l-.001-5.679 5.522 2.85-5.521 2.83zm12.124-6.663s-.2-1.393-.812-2.006c-.778-.806-1.649-.81-2.048-.856C14.513 0 10.223 0 10.223 0h-.009s-4.29 0-7.15.205c-.4.046-1.27.05-2.048.856-.612.613-.812 2.006-.812 2.006S0 4.703 0 6.338v1.534c0 1.636.204 3.272.204 3.272s.2 1.392.812 2.006c.778.805 1.8.78 2.254.864 1.635.155 6.949.203 6.949.203s4.294-.006 7.154-.21c.4-.048 1.27-.052 2.048-.857.612-.614.812-2.006.812-2.006s.204-1.636.204-3.272V6.338c0-1.635-.204-3.271-.204-3.271z">
+                </path>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="Menu-promo-container">
+        <a class="Promo-link" href="#">
+          <img src="./images/nav-logos-insider.png" alt="Marvel Insider" class="Promo-image">
+          <div class="Promo-content">
+            <h3 class="Promo-title">Marvel Insider</h3>
+            <p class="Promo-description">
+              Get rewarded for being a Marvel Fan
+            </p>
+          </div>
+        </a>
+        <a class="Promo-link" href="#">
+          <img src="./images/marvel_mastercard_promo-268x118_0-nav-flyout-v4.png" alt="Marvel Mastercard®"
+            class="Promo-image">
+          <div class="Promo-content">
+            <h3 class="Promo-title">Marvel Mastercard®</h3>
+            <p class="Promo-description">
+              6 Card Designs—Unlimited Cashback
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </header>
+  <!-- Streaming -->
+  <!--  <section class="streaming-mobile">
+    <div class="header-streaming-container">
+      <p class="streaming-text">START STREAMING NOW</p>
+    </div>
+    <div class="streaming-img">
+      <img src="./images/disneybtn_asset2x_3.png" alt="" />
+    </div>
+  </section>
+
+  <div class="wrapper-streaming-desktop">
+    <section class="streaming-desktop">
+
+      <div class="header-streaming-container">
+        <p class="streaming-text">MARVEL MOVIES & SERIES STREAMING ANYTIME ON</p>
+      </div>
+      <div class="streaming-img">
+        <img src="./images/disneybtn_asset2x_3.png" alt="" />
+      </div>
+
+    </section>
+  </div> -->
+
+  <!-- Hero -Posts MAIN MOBILE -->
+  <div class="hero-container">
+    <ul class="hero-slider">
+
+      <li id="slider1" class="slidersCollections">
+        <article class="hero" id="slider1">
+          <div class="hero-image">
+            <img src="./images/sliderMobile/marvel616_lob_mas_mob_02_0.jpg" alt="" />
+          </div>
+          <div class="hero-post-container">
+            <div class="hero-post-img">
+              <img src="./images/sliderMobile/marvel616_lob_log_eye_04 (2).png" alt="" />
+            </div>
+            <div class="hero-post-title">
+              <h1>First-Look Trailer</h1>
+            </div>
+            <div class="hero-post-copy">
+              <p>
+                Marvel's anthology docuseries premieres exclusively on Disney+ on November 20!
+              </p>
+            </div>
+            <button class="hero-btn">WATCH NOW</button>
+          </div>
+        </article>
+      </li>
+      <li id="slider2" class="slidersCollections">
+        <article class="hero" id="slider2">
+          <div class="hero-image">
+            <img src="./images/sliderMobile/muplus_0924_com_mas_mob_01.jpg" alt="" />
+          </div>
+          <div class="hero-post-container">
+            <!--      <div class="shield-image-antman">
+              <img src="" alt="" />
+            </div> -->
+            <p class="streaming-text-hero">MARVEL UNLIMITED</p>
+            <div class="hero-post-title">
+              <h1>2020 Marvel Unlimited Plus Member Kit</h1>
+            </div>
+            <div class="hero-post-copy">
+              <p>
+                Get your first Iook at all the exclusive merch and perks coming with this year's MU+ kit!
+              </p>
+            </div>
+            <button class="hero-btn">LEARN MORE</button>
+          </div>
+        </article>
+      </li>
+
+      <li id="slider3" class="slidersCollections">
+        <article class="hero" id="slider3">
+          <div class="hero-image">
+            <img src="./images/sliderMobile/blackwidowfeaturette_mas_mob.jpg" alt="" />
+          </div>
+          <div class="hero-post-container">
+            <!--            <div class="shield-image-story">
+                          <img src="" alt="" />
+                        </div> -->
+            <p class="streaming-text-hero">Marvel Studios</p>
+            <div class="hero-post-title">
+              <h1>New Phase 4 Release Dates</h1>
+            </div>
+            <div class="hero-post-copy">
+              <p>
+                Find out when 'Black Widow', ‘Shang-Chi and the Legend of the Ten Rings’, and ‘Eternals’ arrive in
+                theaters!
+              </p>
+            </div>
+            <button class="hero-btn">LEAR MORE</button>
+          </div>
+        </article>
+      </li>
+      <li id="slider4" class="slidersCollections">
+        <article class="hero" id="slider4">
+          <div class="hero-image">
+            <img src="./images/sliderMobile/blackwidow_0925_com_mas_mob_01.jpg" alt="" />
+          </div>
+          <div class="hero-post-container">
+            <!--             <div class="shield-image-empyre">
+              <img src="" alt="" />
+            </div> -->
+            <p class="streaming-text-hero">Gear & Goods</p>
+            <div class="hero-post-title">
+              <h1>New Black Widow Barbie</h1>
+            </div>
+            <div class="hero-post-copy">
+              <p>
+                Check out the new collectible dolls based on Natasha Romanoff's upcoming looks in Marvel Studios' 'Black
+                Widow'.
+              </p>
+            </div>
+            <button class="hero-btn">SEE MORE</button>
+
+          </div>
+        </article>
+      </li>
+
+      <li id="slider5" class="slidersCollections">
+        <article class="hero" id="slider5">
+          <div class="hero-image">
+            <img class="" src="./images/sliderMobile/hulkhands_com_mas_mob_01.jpg" alt="" />
+          </div>
+          <div class="hero-post-container">
+            <!--             <div class="shield-image">
+                          <img src="" alt="" />
+                        </div> -->
+            <!-- <p class="streaming-text-hero">MARVEL COMICS</p> -->
+            <div class="hero-post-title  ">
+              <h1>The History of Hulk Hands</h1>
+            </div>
+            <div class="hero-post-copy">
+              <p>
+                The inside story of how a toy captured the hearts and minds and hands of a generation.
+              </p>
+            </div>
+            <button class="hero-btn">SMASH!</button>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+  <!--  Menú del Slider -->
+  <ul class="menu">
+    <li id="menu-b1">
+      <a id="menu-list1" class="menu-list menu-list1" href="#slider1"></a>
+    </li>
+    <li id="menu-b2">
+      <a id="menu-list2" class="menu-list menu-list2" href="#slider2"></a>
+    </li>
+    <li id="menu-b3">
+      <a id="menu-list3" class="menu-list menu-list3" href="#slider3"></a>
+    </li>
+    <li id="menu-b4">
+      <a id="menu-list4" class="menu-list menu-list4" href="#slider4"></a>
+    </li>
+    <li id="menu-b5">
+      <a id="menu-list5" class="menu-list menu-list5" href="#slider5"></a>
+    </li>
+  </ul>
+  <!-- MAIN DESKTOP -->
+  <section class="main">
+    <div class="main-container">
+      <ul class="main-list">
+        <li id="main1" class="slidersCollectionsD">
+          <article class="main-article1">
+            <div class="wrapper-article-description">
+              <div class="article-description">
+                <!--  <div class="article-description-titleOne">
+                  MARVEL UNLIMITED
+                </div> -->
+                <div class="hero-post-img">
+                  <img src="./images/sliderMobile/marvel616_lob_log_eye_04 (2).png" alt="" />
+                </div>
+                <div class="article-description-title">
+                  First-Look Trailer
+                </div>
+                <div class="article-description-copy">
+                  Marvel's anthology docuseries premieres exclusively on Disney+ on November 20!
+                </div>
+                <button class="article-description-button">WATCH NOW</button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li id="main2" class="slidersCollectionsD">
+          <article class="main-article2">
+
+            <div class="wrapper-article-description">
+              <div class="article-description">
+                <div class="article-description-titleOne">
+                  MARVEL UNLIMITED
+                </div>
+                <div class="article-description-title">
+                  2020 Marvel Unlimited Plus Member Kit
+                </div>
+                <div class="article-description-copy">
+                  Check out the new collectible dolls based on Natasha Romanoff's upcoming looks in Marvel Studios'
+                  'Black Widow'.
+                </div>
+                <button class="article-description-button">LEARN MORE</button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li id="main3" class="slidersCollectionsD">
+          <article class="main-article3">
+            <div class="wrapper-article-description">
+              <div class="article-description">
+                <div class="article-description-titleOne">
+                  MARVEL STUDIOS
+                </div>
+                <div class="article-description-title">
+                  New Phase 4 Release Dates
+                </div>
+                <div class="article-description-copy">
+                  Find out when 'Black Widow', ‘Shang-Chi and the Legend of the Ten Rings’, and ‘Eternals’ arrive in
+                  theaters!
+                </div>
+                <button class="article-description-button">WATCH TRAILER</button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li id="main4" class="slidersCollectionsD">
+          <article class="main-article4">
+            <div class="wrapper-article-description">
+              <div class="article-description">
+                <div class="article-description-titleOne">
+                  GEAR & GOODS
+                </div>
+                <div class="article-description-title">
+                  New Black Widow Barbie
+                </div>
+                <div class="article-description-copy">
+                  Check out the new collectible dolls based on Natasha Romanoff's upcoming looks in Marvel Studios'
+                  'Black Widow'.
+                </div>
+                <button class="article-description-button">SEE MORE</button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li id="main5" class="slidersCollectionsD">
+          <article class="main-article5">
+            <div class="wrapper-article-description">
+              <div class="article-description">
+                <div class="article-description-titleOne">
+                  MARVEL UNLIMITED
+                </div>
+                <div class="article-description-title">
+                  The History of Hulk Hands
+                </div>
+                <div class="article-description-copy">
+                  The inside story of how a toy captured the hearts and minds and hands of a generation.
+                </div>
+                <button class="article-description-button">SMASH!</button>
+              </div>
+            </div>
+          </article>
+        </li>
+
+
+      </ul>
+    </div>
+  </section>
+  <!-- MAIN MENU DESKTOP -->
+  <div class="main-menu">
+
+    <div class="main-menu-container">
+      <ul class="main-container-list">
+
+        <a class="main-menu-container-button  main-menu-container-button1" href="#main1" class="menu-listD">
+          First-Look Trailer
+        </a>
+
+
+        <a class="main-menu-container-button main-menu-container-button2" href="#main2" class="menu-listD">2020 Marvel
+          Unlimited Plus Member Kit</a>
+
+
+        <a class="main-menu-container-button main-menu-container-button3" id="b3" href="#main3" class="menu-listD">New
+          Phase 4
+          Release Dates</a>
+
+
+        <a class="main-menu-container-button main-menu-container-button4" href="#main4" class="menu-listD">New Black
+          Widow Barbie
+        </a>
+
+
+        <a class="main-menu-container-button main-menu-container-button5" href="#main5" class="menu-listD">
+          The History of Hulk Hands
+        </a>
+
+      </ul>
+    </div>
+
+
+
+  </div>
+  <!-- CARDS -->
+  <!-- MARVEL AT HOME-->
+
+  <div class="wrapper-cards">
+    <div class="cards">
+      <div class="cards-title">
+        <h3>MARVEL AT HOME</h3>
+      </div>
+      <div class="cards-in">
+        <div class="cards-item">
+          <div class="cards-item-img">
+            <img src="./images/graphic_2 (2).jpg" alt="cards-img" />
+          </div>
+          <div class="item-title">
+            <p>CULTURE & LIFESTYLES</p>
+          </div>
+          <div class="item-copy">
+            <p>
+              Marvel At Home: Here’s How to Stay Connected With Your Favorite
+              Super Heroes
+            </p>
+          </div>
+        </div>
+        <div class="cards-item">
+          <div class="cards-item-img">
+            <img src="./images/cube_0.jpg" alt="cards-img" />
+          </div>
+          <div class="item-title">
+            <p>CULTURE & LIFESTYLES</p>
+          </div>
+          <div class="item-copy">
+            <p>Marvel Mission Recap: Cosmic Cube</p>
+          </div>
+        </div>
+        <div class="cards-item">
+          <div class="cards-item-img">
+            <img src="./images/hawkeyes_card.jpg" alt="cards-img" />
+          </div>
+          <div class="item-title">
+            <p>CULTURE & LIFESTYLES</p>
+          </div>
+          <div class="item-copy">
+            <p>Learn How to Draw Both Hawkeyes with Logan Lubera on Marvel LIVE</p>
+          </div>
+        </div>
+        <div class="cards-item">
+          <div class="cards-item-img">
+            <img src="./images/mission.jpg" alt="cards-img" />
+          </div>
+          <div class="item-title">
+            <p>GAMES</p>
+          </div>
+          <div class="item-copy">
+            <p>
+              Marvel Mission Recap: Loki’s Headpiece
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MARVEL PODCASTS-->
+  <div class="wrapper-cards">
+    <div class="cards">
+      <div class="cards-title">
+        <h3>MARVEL PODCASTS</h3>
+      </div>
+      <div class="cards-in">
+        <div class="cards-item">
+          <div class="cards-item-img">
+            <img src="./images/wom-7-23-20.jpg" alt="cards-img" />
+          </div>
+          <div class="item-title">
+            <p>PODCASTS</p>
+          </div>
+          <div class="item-copy">
+            <p>
+              'Marvel's Agents of S.H.I.E.L.D.' Star Elizabeth Henstridge Talks
+              to Women of Marvel About Her Directorial Debut
+            </p>
+          </div>
+        </div>
+        <div class="cards-item">
+          <div class="cards-item-img">
+            <img src="./images/twim-7-24-20.jpg" alt="cards-img" />
+          </div>
+          <div class="item-title">
+            <p>PODCASTS</p>
+          </div>
+          <div class="item-copy">
+            <p>This Week in Marvel Heralds the Reign of Emperor Hulkling</p>
+          </div>
+        </div>
+        <div class="cards-item">
+          <div class="cards-item-img">
+            <img src="./images/clean_copy_8.jpg" alt="cards-img" />
+          </div>
+          <div class="item-title">
+            <p>COMICS</p>
+          </div>
+          <div class="item-copy">
+            <p>
+              Peter David Tells the Story Behind Spider-Man and "The Death of
+              Jean DeWolff"
+            </p>
+          </div>
+        </div>
+        <div class="cards-item">
+          <div class="cards-item-img">
+            <img src="./images/clean_1_39.jpg" alt="cards-img" />
+          </div>
+          <div class="item-title">
+            <p>COMICS</p>
+          </div>
+          <div class="item-copy">
+            <p>
+              All-Star Artist Javier Garrón on the Influence of Alan Davis and
+              'ClanDestine'
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- UNLIMITED MOBILE -->
+  <section class="unlimited-mobile" id="unlimited">
+
+    <div class="unlimited-img">
+      <img src="./images/0420_mu_base_set_dsk.jpg" alt="">
+    </div>
+    <div class="unlimited-main">
+      <div class="unlimited-main-container">
+        <div class="unlimited-main-img">
+          <img src="./images/marvelunlimited_lob_log_eye_01 (1).png" alt="" />
+        </div>
+        <div class="unlimited-smallTitle mobile">AVAILABLE NOW</div>
+        <div class="unlimited-title mobile">NEW ON MARVEL UNLIMITED</div>
+        <div class="unlimited-copy">
+          Read these plus 27,000+ digital comics for $9.99 a month!
+        </div>
+        <a class="cta-btn mobile">
+          <div class="innerFill "><span>Get Marvel Unlimited</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW ON MARVEL UNLIMITED-->
+  <div class="unlimited-container-all">
+    <div class="unlimited-container-img">
+      <figure class="unlimited-container-img-desk">
+        <div class="unlimited-container-img-desk-img">
+          <img src="" alt="">
+        </div>
+      </figure>
+    </div>
+    <div class="unlimited-description">
+      <div class="unlimited-description-container " aria-live="polite" role="region">
+        <figure class="unlimited-img-wrapper "><img
+            src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/marvelunlimited_lob_log_eye_01.png"
+            srcset="https://terrigen-cdn-dev.marvel.com/content/prod/1x/marvelunlimited_lob_log_eye_01.png"
+            alt="MU Logo" class="sets__logo"></figure>
+        <div class="unlimited-smallTitle">Available Now</div>
+        <div class="unlimited-title">New on Marvel Unlimited</div>
+        <div class="unlimited-copy">Read these plus 27,000+ digital comics for $9.99 a month!</div>
+        <a class="cta-btn">
+          <div class="innerFill "><span>Get Marvel Unlimited</span></div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- UNLIMITED SLIDERS -->
+  <section class="comics-sliders">
+
+    <div class="wrapper-comics">
+      <div class="comics-sliders-container">
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny.jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>X-Men/Fantastic Four (2020) #1</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (2).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Captain America: The End (2020) #1</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (4).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Marauders (2019) #7</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (5).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Star Wars: Darth Vader (2020) #1</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (6).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Miles Morales: Spider-Man (2018) #15</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (7).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Ant-Man (2020) #1</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (8).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Black Cat (2019) #9</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (9).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Daredevil (2019) #17</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (10).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Doctor Doom (2019) #5</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (11).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Immortal Hulk: Great Power (2020) #1</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (12).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Magnificent Ms. Marvel (2019) #12</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (13).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Marvel's Avengers: Hulk (2020) #1</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (14).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Spider-Man & Venom: Double Trouble (2019) #4</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (17).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Spider-Verse (2019) #5</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (18).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Strikeforce (2019) #6</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (15).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Sword Master (2019) #8</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (19).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Yondu (2019) #5</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- HYPE-LATEST -->
+  <section class="hype-latest">
+    <div class="hype-latest-container">
+      <div class="part-hype">
+        <div class="part-hype-head">
+          <div class="svg-up">
+            <svg xmlns="http://www.w3.org/2000/svg" width="186" height="55" viewBox="0 0 186 55">
+              <path d="M21.4 1L1 21.4V717h264.6l20.4-20.4V1H21.4z" mask="url(#mask-2)"></path>
+            </svg>
+          </div>
+          <p class="hype-title">
+            THE HYPE BOX
+          </p>
+          <p class="hype-subtitle">
+            Can’t-miss news and updates from across the Marvel Universe!
+          </p>
+        </div>
+        <div class="cards-hype">
+          <div class="cards-hype-img">
+            <img src="./images/nobrnd0000007_farewell_group_keyframe.png" alt="" />
+          </div>
+          <div class="cards-hype-descriptions">
+            <div class="cards-hype-descriptions-title">TV SHOWS</div>
+            <div class="cards-hype-descriptions-copy">
+              The Cast and Showrunners of 'Marvel's Agents of S.H.I.E.L.D.'
+              Say Farewell to The Series
+            </div>
+          </div>
+        </div>
+        <div class="cards-hype">
+          <div class="cards-hype-img">
+            <img src="./images/empyre-catch-up_card.jpg" alt="" />
+          </div>
+          <div class="cards-hype-descriptions">
+            <div class="cards-hype-descriptions-title">COMICS</div>
+            <div class="cards-hype-descriptions-copy">
+              ‘Empyre’: Where Does It Stand Today?
+            </div>
+          </div>
+        </div>
+        <div class="cards-hype">
+          <div class="cards-hype-img">
+            <img src="./images/tony-team-player_card.jpg" alt="" />
+          </div>
+          <div class="cards-hype-descriptions">
+            <div class="cards-hype-descriptions-title">COMICS</div>
+            <div class="cards-hype-descriptions-copy">
+              4 Times Tony Stark Proved He Was a Team Player
+            </div>
+          </div>
+        </div>
+        <div class="cards-hype">
+          <div class="cards-hype-img">
+            <img src="./images/hulkbuster_card.jpg" alt="" />
+          </div>
+          <div class="cards-hype-descriptions">
+            <div class="cards-hype-descriptions-title">
+              CULTURE & LIFESTYLE
+            </div>
+            <div class="cards-hype-descriptions-copy">
+              Learn How to Draw Tony Stark's Hulkbuster Armor on Marvel LIVE
+            </div>
+          </div>
+        </div>
+        <div class="cards-hype">
+          <div class="cards-hype-img">
+            <img src="./images/hulk-ron-lim_0.jpg" alt="" />
+          </div>
+          <div class="cards-hype-descriptions">
+            <div class="cards-hype-descriptions-title">COMICS</div>
+            <div class="cards-hype-descriptions-copy">
+              Share Your Passion for Your Local Comic Book Store with
+              #LoveComicShops
+            </div>
+          </div>
+        </div>
+        <div class="svg-down">
+          <svg xmlns="http://www.w3.org/2000/svg" width="186" height="55" viewBox="0 0 186 55">
+            <path d="M21.4 1L1 21.4V717h264.6l20.4-20.4V1H21.4z" mask="url(#mask-2)"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="part-latest">
+        <div class="part-latest-wrapper">
+          <div class="part-latest">
+            <div class="latest-title">
+              <p>THE LATEST</p>
+            </div>
+            <ul class="cards-latest">
+              <div class="cards-latest-item">
+                <div class="cards-latest-item-grid">
+                  <div class="cards-latest-item-img">
+                    <img src="./images/16x9_8.png" alt="" />
+                  </div>
+                  <div class="cards-latest-item-description">
+                    <p class="cards-latest-item-title">TV SHOWS</p>
+                    <p class="cards-latest-item-copy">
+                      The Two Hour Series Finale of 'Marvel's Agents of
+                      S.H.I.E.L.D.' Airs Tonight
+                    </p>
+                    <p class="cards-latest-item-year">1 HOUR AGO</p>
+                  </div>
+                </div>
+                <div class="cards-latest-item-grid">
+                  <div class="cards-latest-item-img">
+                    <img src="./images/shop.jpg" alt="" />
+                  </div>
+                  <div class="cards-latest-item-description">
+                    <p class="cards-latest-item-title">GEAR</p>
+                    <p class="cards-latest-item-copy">
+                      Shop Marvel: The Latest From Hasbro, Mondo, and More
+                    </p>
+                    <p class="cards-latest-item-year">2 HOUR AGO</p>
+                  </div>
+                </div>
+                <div class="cards-latest-item-grid">
+                  <div class="cards-latest-item-img">
+                    <img src="./images/poster_6180798618001_be8f2d45d4b8229bf697c339b04b2ba4.jpg" alt="" />
+                  </div>
+                  <div class="cards-latest-item-description">
+                    <p class="cards-latest-item-title">COMICS</p>
+                    <p class="cards-latest-item-copy">
+                      Christopher Cantwell Shares His Blueprint for Iron Man's
+                      Heroic New Era
+                    </p>
+                    <p class="cards-latest-item-year">2 HOUR AGO</p>
+                    <div class="cards-latest-item-footer">
+                      <img src="./images/icon1.svg" alt="" />
+                      <span>Earn Points, Get Rewards</span><a href="">Join NOW!</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cards-latest-item-grid">
+                  <div class="cards-latest-item-img">
+                    <img src="./images/clean_173.jpg" alt="" />
+                  </div>
+                  <div class="cards-latest-item-description">
+                    <p class="cards-latest-item-title">COMICS</p>
+                    <p class="cards-latest-item-copy">
+                      Didja Know... The Boldest Battles of the Black Panther
+                    </p>
+                    <p class="cards-latest-item-year">2 HOUR AGO</p>
+                  </div>
+                </div>
+                <div class="cards-latest-item-grid">
+                  <div class="cards-latest-item-img">
+                    <img src="./images/339072bdd3e7b343988006005ce8fd01.jpg" alt="" />
+                  </div>
+                  <div class="cards-latest-item-description">
+                    <p class="cards-latest-item-title">GAMES</p>
+                    <p class="cards-latest-item-copy">
+                      Entering Marvel Contest of Champions: Air-Walker
+                    </p>
+                    <p class="cards-latest-item-year">5 HOUR AGO</p>
+                    <div class="cards-latest-item-footer">
+                      <img src="./images/icon1.svg" alt="" />
+                      <span>Earn Points, Get Rewards</span><a href="">Join NOW!</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cards-latest-item-grid">
+                  <div class="cards-latest-item-img">
+                    <img src="./images/mpq.png" alt="" />
+                  </div>
+                  <div class="cards-latest-item-description">
+                    <p class="cards-latest-item-title">GAMES</p>
+                    <p class="cards-latest-item-copy">
+                      Piecing Together Marvel Puzzle Quest: Wolverine (Samurai
+                      Daken)
+                    </p>
+                    <p class="cards-latest-item-year">5 HOUR AGO</p>
+                    <div class="cards-latest-item-footer">
+                      <img src="./images/icon1.svg" alt="" />
+                      <span>Earn Points, Get Rewards</span><a href="">Join NOW!</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cards-latest-item-grid">
+                  <div class="cards-latest-item-img">
+                    <img src="./images/insider_crd-1560x876_3.jpg" alt="" />
+                  </div>
+                  <div class="cards-latest-item-description">
+                    <p class="cards-latest-item-title">CULTURE & LIFESTYLE</p>
+                    <p class="cards-latest-item-copy">
+                      Redeem Your Marvel Insider Points for Marvel Made
+                      Exclusive Pins and Skottie Young Premier Bundle Giveaway
+                    </p>
+                    <p class="cards-latest-item-year">8 HOUR AGO</p>
+                  </div>
+                </div>
+              </div>
+            </ul>
+            <button class="button-latest">LOAD MORE</button>
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="anuncio" id="anuncio1">
+    <div class="wrapper-anuncio">
+      <div class="anuncio-box">
+        <div class="anuncio-close">
+          <svg class="svg-close" id="close-svg-anuncio" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+            viewBox="0 0 20 16">
+            <path id="close-svg" d="M-1-3L10.314 8.314M13 11l11.314 11.314M24.142-6L-4.142 22.284"></path>
+          </svg>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="anuncio2" id="anuncio2">
+    <div class="wrapper-anuncio2">
+      <div class="anuncio2-box">
+        <div class="anuncio-close">
+          <svg class="svg-close" id="close-svg-anuncio2" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+            viewBox="0 0 20 16">
+            <path id="close-svg" d="M-1-3L10.314 8.314M13 11l11.314 11.314M24.142-6L-4.142 22.284"></path>
+          </svg>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- TRAILERS -->
+
+
+  <section class="trailersN">
+
+    <div class="wrapper-trailersN">
+      <div class="trailersN-container">
+        <div class="trailersN-container-section">
+          <div class="trailersN-container-section-video-component">
+            <div class="trailersN-container-section-video-component__video">
+              <div class="trailersN-video-dock-container">
+                <div class="trailersN-video-dock">
+                  <div class="trailersN-grid-wrapper">
+                    <div class="trailersN-video-container">
+                      <div class="trailersN-video-img">
+                        <img src="./images/trailers/poster_6192249057001_4ecf69f95a015520b6bd961aada969e1.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="trailersN-container-section-video-component__metadata">
+              <div class="trailersN-video-metadata__meta__wrapper"><a class="trailersN-video-metadata__eyebrow"
+                  href="/watch/digital-series/earth-s-mightiest-show">Earth's Mightiest Show<span
+                    class="trailersN-video-metadata__eps"> / S3
+                    E56</span></a>
+                <div class="video-metadata__title">THOR vs STORM</div>
+                <div class="video-metadata__insider"><span class="icon--svg icon--insider" aria-hidden="true"><svg
+                      id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 463 463">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            opacity: .4
+                          }
+
+                          .cls-2 {
+                            fill: #fff
+                          }
+
+                          .cls-3 {
+                            fill: #e8b63e
+                          }
+
+                          .cls-4 {
+                            fill: #202020
+                          }
+                        </style>
+                      </defs>
+                      <title>Artboard 1</title>
+                      <g class="cls-1">
+                        <circle class="cls-2" cx="231.5" cy="231.5" r="195"></circle>
+                        <path class="cls-3"
+                          d="M231.5 64A167.5 167.5 0 1 1 64 231.5 167.5 167.5 0 0 1 231.5 64m0-55a222.54 222.54 0 0 0-86.62 427.49 222.54 222.54 0 0 0 173.24-410A221.08 221.08 0 0 0 231.5 9z">
+                        </path>
+                      </g>
+                      <circle class="cls-2" cx="231.5" cy="231.5" r="167.5"></circle>
+                      <path class="cls-4"
+                        d="M369.78 137l-33.27 187.65a3.18 3.18 0 0 1-3.2 2.91h-33.49a4.26 4.26 0 0 1-4.08-2.91l-45.43-127.27h-1.45l-22.43 127.27a3.13 3.13 0 0 1-2.91 2.91h-31.45a2.42 2.42 0 0 1-2.63-2.91l34.08-192.21a3.17 3.17 0 0 1 3.2-2.92h33.2c2.33 0 3.79.88 4.37 2.92l45.14 127.26h1.17l28.16-156.83A167.47 167.47 0 0 0 111 347.73l37.73-215.29a3.18 3.18 0 0 1 3.21-2.92h35.23c1.75 0 2.62 1.17 2.33 2.92L146.77 376a167.48 167.48 0 0 0 223-239z">
+                      </path>
+                    </svg></span> Earn Points, Get Rewards<a>Join!</a></div>
+                <div class="video-metadata__description">Who do YOU think has more control over lightning in the Marvel
+                  Universe,
+                  Storm or Thor?
+                </div>
+              </div>
+            </div>
+            <div class="trailers-video-sliders">
+              <div class="video-sliders-container">
+                <div class="video-sliders-item">
+                  <div class="video-sliders-video">
+                    <!--   <iframe src="https://www.youtube.com/embed/5evGlVgmmfM" frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen="">
+                    </iframe> -->
+                    <img src="./images/trailers/poster_6192249057001_4ecf69f95a015520b6bd961aada969e1.jpg" width="100%"
+                      alt="">
+                  </div>
+                  <div class="video-sliders-title">
+                    <p> THOR vs STORM</p>
+                  </div>
+                </div>
+
+                <div class="video-sliders-item">
+                  <div class="video-sliders-video">
+                    <img src="./images/trailers/poster_6192240717001_6dc22a033226c5cc6bac02da84d8a387.jpg" width="100%"
+                      alt="">
+                  </div>
+                  <div class="video-sliders-title">
+                    <p> Vision | Marvel 101</p>
+                  </div>
+                </div>
+                <div class="video-sliders-item">
+                  <div class="video-sliders-video">
+                    <img src="./images/trailers/poster_6192864444001_f84f89695bc0c2bc15d231d2a671816d.jpg" width="100%"
+                      alt="">
+                  </div>
+                  <div class="video-sliders-title">
+                    <p> WandaVision | Official Trailer | Disney+</p>
+                  </div>
+                </div>
+                <div class="video-sliders-item">
+                  <div class="video-sliders-video">
+                    <img src="./images/trailers/poster_6191751995001_4f57fc04451f6ea5198fd6c8f9788ed9_0.jpg"
+                      width="100%" alt="">
+                  </div>
+                  <div class="video-sliders-title">
+                    <p>WARHAMMER 40,000: MARNEUS CALGAR #1 Trailer | Marvel Comics</p>
+                  </div>
+                </div>
+                <div class="video-sliders-item">
+                  <div class="video-sliders-video">
+                    <img src="./images/trailers/poster_6191513916001_ecc0527d4abc052e38eb6a9079b89bbf.jpg" width="100%"
+                      alt="">
+                  </div>
+                  <div class="video-sliders-title">
+                    <p> Marvel’s Spider-Man: Miles Morales PS5 Gameplay Demo</p>
+                  </div>
+                </div>
+                <div class="video-sliders-item">
+                  <div class="video-sliders-video">
+                    <img src="./images/trailers/poster_6191373779001_cc05522a0cecebe1d2f16ac78ecb57f0.jpg" width="100%"
+                      alt="">
+                  </div>
+                  <div class="video-sliders-title">
+                    <p>How Galactus Enters The Marvel Universe</p>
+                  </div>
+                </div>
+                <div class="video-sliders-item">
+                  <div class="video-sliders-video">
+                    <img src="./images/trailers/poster_6192376638001_59de3c389b8d7e299735c81a42ab1443.jpg" width="100%"
+                      alt="">
+                  </div>
+                  <div class="video-sliders-title">
+                    <p> Celebrating Essential Workers: Postal Worker</p>
+                  </div>
+                </div>
+                <div class="video-sliders-item">
+                  <div class="video-sliders-video">
+                    <img src="./images/trailers/poster_6190584271001_b6989e235f90e383a5d32e2cb8a09083.jpg" width="100%"
+                      alt="">
+                  </div>
+                  <div class="video-sliders-title">
+                    <p>Summoner Showdown 2020: Last Chance to Qualify!</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="trailers">
+    <div class="wrapper-trailer">
+
+      <div class="trailers-container">
+        <div class="trailers-in">
+
+          <div class="trailers-video-head">
+            <iframe src="https://www.youtube.com/embed/5evGlVgmmfM" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="trailers-description">
+            <small class="description-small">TRAILERS & EXTRAS</small>
+            <p class="description-title">Top 10 Iron Man Costumes!</p>
+            <div class="cards-latest-item-footer">
+              <img src="./images/icon1.svg" alt="" />
+              <span>Earn Points, Get Rewards</span><a href="">Join NOW!</a>
+            </div>
+            <p class="description-copy">
+              Only the best for Tony Stark. Which is YOUR favorite Iron Man
+              suit?
+            </p>
+          </div>
+
+          <div class="trailers-video-sliders">
+            <div class="video-sliders-container">
+              <div class="video-sliders-item">
+                <div class="video-sliders-video">
+                  <iframe src="https://www.youtube.com/embed/5evGlVgmmfM" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                  </iframe>
+                </div>
+                <div class="video-sliders-title">
+                  <p> Top 10 Iron Man Costumes!</p>
+                </div>
+              </div>
+
+              <div class="video-sliders-item">
+                <div class="video-sliders-video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/q0xtjV820o8" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                  </iframe>
+                </div>
+                <div class="video-sliders-title">
+                  <p> Celebrating Essential Workers: A Heroic Doctor!</p>
+                </div>
+              </div>
+              <div class="video-sliders-item">
+                <div class="video-sliders-video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/jQx0VwYQDA0" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="video-sliders-title">
+                  <p> A Look Inside Marvel Studios With One Day at Disney!</p>
+                </div>
+              </div>
+              <div class="video-sliders-item">
+                <div class="video-sliders-video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/1MLpiS4BlPU" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="video-sliders-title">
+                  <p> A message from Clark Gregg, Agent Phil Coulson</p>
+                </div>
+              </div>
+              <div class="video-sliders-item">
+                <div class="video-sliders-video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/1MLpiS4BlPU" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="video-sliders-title">
+                  <p> A message from Clark Gregg, Agent Phil Coulson</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- NEW ON MARVEL UNLIMITED-->
+  <div class="unlimited-container-all">
+    <div class="unlimited-container-img">
+      <figure class="unlimited-container-img-desk">
+        <div class="unlimited-container-img-desk-img2">
+          <img src="" alt="">
+        </div>
+      </figure>
+    </div>
+    <div class="unlimited-description">
+      <div class="unlimited-description-container second " aria-live="polite" role="region">
+        <figure class="unlimited-img-wrapper "><img
+            src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/marvelunlimited_lob_log_eye_01.png"
+            srcset="https://terrigen-cdn-dev.marvel.com/content/prod/1x/marvelunlimited_lob_log_eye_01.png"
+            alt="MU Logo" class="sets__logo">
+        </figure>
+        <div class="unlimited-smallTitle">ON SALE 9/30</div>
+        <div class="unlimited-title">New Comics This Week</div>
+        <div class="unlimited-copy">Check out the newest Marvel comics coming out this week!</div>
+        <div class="cta-btn-container">
+          <a class="cta-btn">
+            <div class="innerFill "><span>Shop Digital Comics</span></div>
+          </a>
+          <a class="cta-btn">
+            <div class="innerFill "><span>Print Subscriptions</span></div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- UNLIMITED MOBILE -->
+  <section class="unlimited-mobile" id="unlimited">
+
+    <div class="unlimited-img">
+      <img src="./images/0420_mu_base_set_dsk.jpg" alt="">
+    </div>
+    <div class="unlimited-main">
+      <div class="unlimited-main-container">
+        <div class="unlimited-main-img">
+          <img src="./images/marvelunlimited_lob_log_eye_01 (1).png" alt="" />
+        </div>
+        <div class="unlimited-smallTitle mobile">AVAILABLE NOW</div>
+        <div class="unlimited-title mobile">NEW ON MARVEL UNLIMITED</div>
+        <div class="unlimited-copy">
+          Read these plus 27,000+ digital comics for $9.99 a month!
+        </div>
+        <a class="cta-btn mobile">
+          <div class="innerFill "><span>Get Marvel Unlimited</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- UNLIMITED SLIDERS -->
+  <section class="comics-sliders">
+
+    <div class="wrapper-comics">
+      <div class="comics-sliders-container">
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (22).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Empyre (2020) #5</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (23).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Empyre: X-Men (2020) #3</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (24).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Star Wars: Darth Vader (2020) #4</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (25).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>The Amazing Spider-Man (2018) #46</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (26).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Immortal Hulk (2018) #36</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (27).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Marauders (2019) #11</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (29).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Captain Marvel (2019) #19</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (28).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Empyre: Avengers (2020) #2</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (30).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Empyre: Captain America (2020) #2</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (31).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Star Wars: The Action Figure Variant Covers (2020) #1</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (32).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>Venom (2018) #27</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+        <div class="comics-item">
+          <div class="comics-img">
+            <img src="./images/portrait_uncanny (33).jpg" alt="" />
+          </div>
+          <div class="comics-title">
+            <p>X-Force (2019) #12</p>
+          </div>
+          <div class="comics-year">
+            <p>2020</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- MASTERCARD -->
+  <section class="mastercard">
+    <div class="mastercard-wrapper">
+      <div class="mastercard-container">
+        <div class="mastercard-img">
+          <img src="./images/02mm_promo_dsk-1140x680.jpg" alt="">
+        </div>
+        <div class="mastercard-descriptions">
+          <div class="mastercard-descriptions-title">
+            MARVEL MASTERCARD®
+          </div>
+          <div class="mastercard-descriptions-copy">
+            Earn a $25 Statement Credit
+          </div>
+          <button class="hero-btn">LEARN MORE</button>
+          <div class="mastercard-descriptions-legal">Terms and Conditions Apply. Ⓒ 2020 MARVEL</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <section class="footer">
+    <div class="wrapper-footer">
+      <div class="footer-container">
+        <div class="footer-responsive-part1-2-3">
+          <div class="footer-part1">
+            <div class="footer-part1-img">
+              <img src="./images/marvel-logo-small.png" alt="">
+            </div>
+            <div class="footer-part1-img2">
+              <img src="./images/logo-marvel-M.png" width="80" height="120" alt="">
+            </div>
+            <div class="footer-part1-titles">
+              <div class="footer-part1-titles1">
+                <p>ABOUT MARVEL</p>
+                <p>HELP/FAQS</p>
+                <p>CAREERS</p>
+                <p>INTERNSHIPS</p>
+              </div>
+              <div class="footer-part1-titles2">
+                <p>ADVERTISING</p>
+                <p>MARVELHQ.COM</p>
+                <p>REDEEM DIGITAL COMICS</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="footer-part2">
+            <div class="footer-part2-inside">
+              <div class="footer-inside1">
+                <div class="footer-inside-img">
+                  <img src="./images/marvel_insider-topnav-logo-large2x (1).png" alt="">
+                </div>
+                <div class="footer-inside-descriptions">
+                  <h4 class="footer-inside-description-title">MARVEL INSIDER</h4>
+                  <p class="footer-inside-description-copy">Get Rewarded for Being a Marvel Fan</p>
+                </div>
+              </div>
+              <div class="footer-inside2">
+                <div class="footer-inside-img">
+                  <img src="./images/mastercard-crop_0-footer-v3.png" alt="">
+                </div>
+                <div class="footer-inside-descriptions">
+                  <h4 class="footer-inside-description-title">MARVEL MASTERCARD®</h4>
+                  <p class="footer-inside-description-copy">6 Card Designs—Unlimited Cashback</p>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+          <div class="footer-part3">
+            <div class="footer-part3-icons">
+              <h3 class="footer-part3-title">FOLLOW MARVEL</h3>
+              <div class="footer-icons">
+                <img src="./images/icons/SVG/facebook2.svg" alt="">
+                <img src="./images/icons/SVG/twitter.svg" alt="">
+                <img src="./images/icons/SVG/instagram.svg" alt="">
+                <img src="./images/icons/SVG/tumblr.svg" alt="">
+                <img src="./images/icons/SVG/youtube.svg" alt="">
+                <img src="./images/icons/SVG/snapchat-ghost.svg" alt="">
+                <img src="./images/icons/SVG/pinterest.svg" alt="">
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-part4">
+          <div class="footer-list">
+            <p class="footer-list-item">Terms of Use</p>
+            <p class="footer-list-item">Privacy Policy</p>
+            <p class="footer-list-item">Your California Privacy Rights</p>
+            <p class="footer-list-item">Do Not Sell My Info</p>
+            <p class="footer-list-item">Children's Online Privacy Policy</p>
+            <p class="footer-list-item">License Agreement</p>
+            <p class="footer-list-item">Interest-Based Ads</p>
+            <p class="footer-list-item">Marvel Insider Terms</p>
+            <p class="footer-list-item">©2020 MARVEL</p>
+            <p class="footer-list-item">This clone was made with <span>☕</span> by @amaurysoto</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="./js/index.js"></script>
+<script src="./js/sliders.js"></script>
+<script src="./js/jslogo.js"></script>
+<script src="./js/anuncios.js"></script>
+<script src="./js/menu-otones.js"></script>
+<script src="./js/menu.js"></script>
+
+</html>
