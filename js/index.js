@@ -103,7 +103,9 @@ const $classModalSign = document.getElementById("modal-sign");
 const $botonOpenCreateAccount = document.getElementById("open-modal-create")
 const $classCreateAccount = document.getElementById("modal-create")
 const $botonCloseCreate = document.getElementById("modalCreate-close")
-
+const $botonJoin = document.getElementById("open-modal-join")
+const $classEnhance = document.getElementById("join-first")
+const $botonJoinNow = document.getElementById("boton-join-create")
 
 $botonSignIn.addEventListener("click", () => {
   $classModalSign.classList.toggle("is-active")
@@ -123,10 +125,21 @@ $botonOpenCreateAccount.addEventListener("click", () => {
 })
 
 $botonCloseCreate.addEventListener("click", () => {
-  alert("Hola")
+  $classCreateAccount.classList.remove("is-active")
 })
 
+$botonJoin.addEventListener("click", ()=>{
+  $classEnhance.classList.toggle("is-active")
+})
 
+$botonJoinNow.addEventListener("click", ()=>{
+  $classEnhance.classList.remove("is-active")
+   $classCreateAccount.classList.add("is-active")
+
+})
+$classEnhance.addEventListener("click",()=>{
+  $classEnhance.classList.remove("is-active")
+})
 
 
 
