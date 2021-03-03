@@ -3,8 +3,9 @@
 En este proyecto hice desde cero un Clone de la página oficial de Marvel.
 Solo usé HTML5 -CSS3- Responsive Design
 Flexbox - Grid Layout-
+[![2021-03-02-19h30-43.gif](https://i.postimg.cc/kg1byS9s/2021-03-02-19h30-43.gif)](https://postimg.cc/MnBH6vnf)
 
-[![2021-03-02-19h30-43.gif](https://i.postimg.cc/kg1byS9s/2021-03-02-19h30-43.gif)](https://amaurysg.github.io/marvelclonepage/)
+
 
 
 
