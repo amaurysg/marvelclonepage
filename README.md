@@ -5,6 +5,8 @@ Solo usé HTML5 -CSS3- Responsive Design
 Flexbox - Grid Layout-
 
 
+[![2021-03-02-19h11-57.gif](https://i.postimg.cc/mgwtdsSw/2021-03-02-19h11-57.gif)](https://amaurysg.github.io/gif-react-app/)
+[![2021-03-02-19h23-33.gif](https://i.postimg.cc/3RLXzGCt/2021-03-02-19h23-33.gif)](https://postimg.cc/hzdQdfYm)
 
 - Mobile: 320px
 - Desktop: 1024px
@@ -12,7 +14,7 @@ Flexbox - Grid Layout-
 "Las imagenes fueron descargadas usando la extension de Chrome'Image Downloader'"
 
 Clone page web Marvel, Espero les guste :)
-[![2021-03-02-19h23-33.gif](https://i.postimg.cc/3RLXzGCt/2021-03-02-19h23-33.gif)](https://postimg.cc/hzdQdfYm)
+
 gh-pages -> https://amaurysg.github.io/marvelclonepage/
 
 
